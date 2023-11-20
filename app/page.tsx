@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main className="">
       <Landing />
-      <Topic1 /> 
+      <Topic1 />
       <Topic2 />
       <Topic3 />
       <Topic4 />
-      <Topic5 />
-      <Topic6 />
+      <Topic5 /> //tushar
+      <Topic6 /> //tushar
     </main>
   );
 }
