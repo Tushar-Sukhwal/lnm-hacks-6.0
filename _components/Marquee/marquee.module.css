@@ -1,0 +1,25 @@
+/* marquee.module.css */
+
+/* Container styling */
+.marqueeContainer {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.1rem 10rem;
+  }
+  
+  /* Text styling */
+  .marqueeText {
+    white-space: nowrap;
+  }
+  
+ 
+  
+  .marqueeText::after /* Change color for // at the beginning of the line */
+  {
+    content: ' //';
+    color: #FFEA80;
+    margin-right: 5px; /* Add some space between // and the text */
+  }
+  
