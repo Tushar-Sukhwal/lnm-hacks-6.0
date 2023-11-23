@@ -12,6 +12,7 @@ import Marquee from './_components/Marquee/marquee';
 import About from './_components/About/about'
 import Schedule from "./Schedule/page";
 import CTF from "./CTF/page";
+import Tracks from "./Tracks/page";
 export default function Home() {
   return (
     <main className="">
@@ -19,9 +20,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee text=" THINK BUILDING, THINK LNM HACKS" />
-    <About />
+    // <About />
     <Schedule />
     <CTF/>
+    <Tracks/>
     </main>
   );
 }

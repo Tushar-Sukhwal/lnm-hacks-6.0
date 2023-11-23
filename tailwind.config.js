@@ -75,6 +75,8 @@ module.exports = {
       backgroundImage : {
         'waves' : "url('/waves.png')", 
         'wormhole' : "url('/bg.png')",
+        'third' : "url('/image 10 (1).png')",
+        'frame' : "url('/mainframe.svg')"
       } , 
       dropShadow : {
         '3xl' : '0 35px 35px rgb(221,213,244)'
