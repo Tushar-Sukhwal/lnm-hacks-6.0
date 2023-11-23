@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -70,6 +72,13 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage : {
+        'waves' : "url('/waves.png')", 
+        'wormhole' : "url('/bg.png')",
+      } , 
+      dropShadow : {
+        '3xl' : '0 35px 35px rgb(221,213,244)'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
