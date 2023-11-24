@@ -6,17 +6,19 @@ import Topic3 from "./_components/topic3";
 import Topic4 from "./_components/topic4";
 import Topic5 from "./_components/topic5";
 import Topic6 from "./_components/topic6";
+import Topic7 from "./_components/topic7";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="h-full w-full">
       <Landing />
       <Topic1 />
       <Topic2 />
       <Topic3 />
       <Topic4 />
-      <Topic5 /> //tushar
-      <Topic6 /> //tushar
+      <Topic5 /> 
+      <Topic6 /> 
+      <Topic7 />
     </main>
   );
 }
