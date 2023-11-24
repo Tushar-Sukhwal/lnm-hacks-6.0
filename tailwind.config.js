@@ -76,6 +76,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "section-6": "url('/section-6-background.png')",
         "section-7": "url('/topic-7-bg.png')",
+        
       },
     },
   },
