@@ -14,7 +14,7 @@ const Topic7 = () => {
                 Venue
               </div>
             </div>
-            The LNM Institute Of Information Technology LNMIIT
+            The LNM Institute Of Information Technology LNMIITg tfcdxb
             <br className="pb-2" />
             <span className=" font-light text-2xl gap-2 leading-tight ">
               Rupa ki Nangal, Jaipur Rajasthan
