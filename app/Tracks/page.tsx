@@ -13,6 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Bounty from './_components/Bounty'
+import Test from './_components/Test'
 
 function Tracks() {
   return (
@@ -33,6 +34,7 @@ function Tracks() {
           <Bounty/>
           <Bounty/>
           <Bounty/>
+          
         </div>
     </div>
   )
