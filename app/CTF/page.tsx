@@ -7,7 +7,7 @@ import Callout from './_components/Callout'
 import design from '../../public/Vector 31.png'
 function CTF() {
   return (
-    <div className='bg-wormhole h-fit bg-no-repeat bg-cover bg-[#AB93CC] '>
+    <div className='bg-wormhole h-fit min-w-screen bg-no-repeat bg-cover bg-[#AB93CC] '>
         <div className='flex flex-row gap-x-7 '>\
         <div className='p-44'>
         <Content/>

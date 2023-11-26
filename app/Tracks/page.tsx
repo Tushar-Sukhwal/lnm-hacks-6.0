@@ -6,7 +6,7 @@ import green from '../../public/Rectangle 50.png'
 import Image from 'next/image'
 function Tracks() {
   return (
-    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat h-screen'>
+    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat h-screen min-w-screen '>
         <Slider/>
     </div>
   )

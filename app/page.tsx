@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <main className="">
 
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Marquee text=" THINK BUILDING, THINK LNM HACKS" />
-    // <About />
+    // <About /> */}
     <Schedule />
     <CTF/>
     <Tracks/>
