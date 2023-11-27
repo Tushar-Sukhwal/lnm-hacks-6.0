@@ -16,7 +16,7 @@ import Bounty from './_components/Bounty'
 
 function Tracks() {
   return (
-    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat h-screen  '>
+    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat h-screen overflow-x-hidden  '>
         <Card className='w-[18rem] h-[4rem] text-center border-2 border-black rounded-none relative top-14 left-[44rem]'>
           <CardTitle className='mt-3 font-black text-3xl'>BOUNTIES</CardTitle>
         </Card>

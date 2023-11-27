@@ -78,7 +78,8 @@ module.exports = {
         'third' : "url('/image 10 (1).png')",
         'frame' : "url('/mainframe.svg')",
         "grid" : "url('/grid.png')", 
-        "grid1" : "url('/Group 31.png')"
+        "grid1" : "url('/Group 31.png')",
+        "box"  :"url('/box.svg')"
       } , 
       dropShadow : {
         '3xl' : '0 35px 35px rgb(221,213,244)'
