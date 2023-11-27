@@ -14,7 +14,7 @@ const Topic7 = () => {
                 Venue
               </div>
             </div>
-            The LNM Institute Of Information Technology LNMIITg tfcdxb
+            The LNM Institute Of Information Technology LNMIIT
             <br className="pb-2" />
             <span className=" font-light text-2xl gap-2 leading-tight ">
               Rupa ki Nangal, Jaipur Rajasthan
@@ -29,10 +29,10 @@ const Topic7 = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#2F2138] px-20">
-        <div className="">
+      <div className="bg-[#2F2138] px-20 ">
+        <div className="flex justify-between">
           <div className="w-">
-            <img src="/footer-logo.png" alt="" className="h-14 w-auto" />
+            <img src="/footer-logo.png" alt="" className="h-20 w-auto" />
             <img
               src="/footer-text-logo.png"
               alt=""
@@ -53,11 +53,29 @@ const Topic7 = () => {
               </button>
             </div>
           </div>
-          <div></div>
+          <div className="text-white underline flex flex-col my-auto justify-start items-end">
+            <div className="flex justify-space-around gap-3" >
+              <a href="">About</a>
+              <a href="">Schedule</a>
+              <a href="">CTF</a>
+            </div>
+            <div className="flex justify-space-around gap-3">
+              <a href="">Tracks & Prizes</a>
+            </div>
+            <div className="flex justify-space-around gap-3">
+              <a href="">Our Sponsors</a>
+              <a href="">FAQs</a>
+              <a href="">Venue</a>
+            </div>
+          </div>
         </div>
-        <div></div>
+        <div className="mt-3 text-white font-semibold w-full text-center">
+          Designed with ❤️ in 🇮🇳 by Suryansh Chauhan , Aditya Karanwal & Akshat
+          Singh
+        </div>
       </div>
     </div>
   );
 };
 export default Topic7;
+
