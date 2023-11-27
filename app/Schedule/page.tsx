@@ -7,7 +7,7 @@ import Cal from './_components/Cal'
 
 const Schedule = () => {
   return (
-    <div className='bg-waves h-screen min-w-screen bg-no-repeat bg-contain bg-[#DDD6F4] border-b-8 border-black'>
+    <div className='bg-waves h-screen  bg-no-repeat bg-contain bg-[#DDD6F4] border-b-8 border-black'>
         <div className='flex flex-row gap-x-7'>
         <div className='px-6 relative mb-8 '>
         <Time/>

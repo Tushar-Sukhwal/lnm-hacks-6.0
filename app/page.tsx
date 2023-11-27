@@ -13,17 +13,19 @@ import About from './_components/About/about'
 import Schedule from "./Schedule/page";
 import CTF from "./CTF/page";
 import Tracks from "./Tracks/page";
+import Sponsors from "./sponsors/page";
 export default function Home() {
   return (
-    <main className="">
+    <main className="min-w-screen">
 
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <Marquee text=" THINK BUILDING, THINK LNM HACKS" />
-    // <About /> */}
+    <About />
     <Schedule />
     <CTF/>
     <Tracks/>
+    <Sponsors />
     </main>
   );
 }

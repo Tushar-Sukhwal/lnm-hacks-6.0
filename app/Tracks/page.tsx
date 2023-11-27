@@ -13,18 +13,17 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Bounty from './_components/Bounty'
-import Test from './_components/Test'
 
 function Tracks() {
   return (
-    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat h-screen min-w-screen '>
+    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat h-screen  '>
         <Card className='w-[18rem] h-[4rem] text-center border-2 border-black rounded-none relative top-14 left-[44rem]'>
           <CardTitle className='mt-3 font-black text-3xl'>BOUNTIES</CardTitle>
         </Card>
 
         
 
-        <div className='grid grid-cols-3 gap-4 relative top-20 left-20 px-10'>
+        <div className='grid grid-cols-3 gap-4 relative top-20 left-20 px-10 items-center'>
           <Bounty/>
           <Bounty/>
           <Bounty/>
@@ -34,7 +33,8 @@ function Tracks() {
           <Bounty/>
           <Bounty/>
           <Bounty/>
-          
+          <Bounty/>
+          <Bounty/> 
         </div>
     </div>
   )

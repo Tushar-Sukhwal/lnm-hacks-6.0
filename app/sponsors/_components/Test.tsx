@@ -15,7 +15,6 @@ import {
 function Test() {
   return (
     <div>
-     
       <Image alt = 'blue' src = {blue} className='h-[9.5rem] relative left-[13.7rem] top-[9.5rem]'/>
       <Card className='rounded-none h-[8rem] w-[15rem] border-2 border-black'>
                 
