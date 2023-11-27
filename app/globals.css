@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,4 +74,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.shadow-section-7 {
+-webkit-box-shadow: 20px 22px 7px 3px rgba(0,0,0,0.87);
+-moz-box-shadow: 20px 22px 7px 3px rgba(0,0,0,0.87);
+box-shadow: 20px 22px 7px 3px rgba(0,0,0,0.87);
 }

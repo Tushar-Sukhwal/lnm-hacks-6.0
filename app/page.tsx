@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Landing from "./_components/landing";
 import Topic1 from "./_components/topic1";
@@ -16,7 +17,7 @@ import Tracks from "./Tracks/page";
 import Sponsors from "./sponsors/page";
 export default function Home() {
   return (
-    <main className="min-w-screen">
+    <main className="h-full w-full">
 
       <Navbar />
       <Hero />
@@ -26,6 +27,8 @@ export default function Home() {
     <CTF/>
     <Tracks/>
     <Sponsors />
+    <Topic6 /> 
+    <Topic7 />
     </main>
   );
 }
