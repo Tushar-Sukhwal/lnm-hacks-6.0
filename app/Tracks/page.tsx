@@ -23,7 +23,7 @@ function Tracks() {
 
         
 
-        <div className='grid grid-cols-3 gap-4 relative top-20 left-20 px-10 items-center'>
+        <div className='grid grid-cols-3 gap-4 relative top-14 left-20 px-10 py-16 items-center'>
           <Bounty/>
           <Bounty/>
           <Bounty/>
