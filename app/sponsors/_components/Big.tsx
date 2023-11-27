@@ -11,6 +11,7 @@ import {
 import yellow from "../../../public/Rectangle 8.png";
 import blue from "../../../public/Rectangle 9.svg";
 import Image from "next/image";
+import solana from "../../../public/image 24.png"
 
 function Big() {
   return (
@@ -21,7 +22,9 @@ function Big() {
           src={blue}
           className="h-[22.9rem] relative left-[27.8rem] top-[22.9rem]"
         />
-        <Card className="rounded-none h-[20rem] w-[28rem] border-2 border-black"></Card>
+        <Card className="rounded-none h-[20rem] w-[28rem] border-2 border-black">
+          <Image alt ='solana' src={solana} className="relative top-32 left-16 w-[20rem]" />
+        </Card>
         <Image alt="yellow" src={yellow} className="w-[31rem]" />
       </div>
     </div>

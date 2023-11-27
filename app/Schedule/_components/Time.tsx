@@ -10,14 +10,14 @@ import {
 
 function Time() {
   return (
-    <Card className='w-[50rem] h-[25rem] relative top-[12rem] left-10 border-4 border-black rounded-xl z-10'>
+    <Card className='w-[40rem] h-[25rem] relative top-[12rem] left-10 border-4 border-black rounded-none rounded-lg z-10'>
       <div className='bg-[#FF9AA2] h-[25%] flex flex-row border-b-2 border-black gap-x-[32rem] items-center'>
         <div className='flex flex-row items-center ml-3 gap-x-5  '>
-          <img src="./Ellipse 3.svg" className='h-[40%]' alt="" />
-          <img src="./Ellipse 3.svg" className='h-[40%]' alt="" />
-          <img src="./Ellipse 3.svg" className='h-[40%]' alt="" />
+          <img src="./Ellipse 3.svg" className='h-[35%]' alt="" />
+          <img src="./Ellipse 3.svg" className='h-[35%]' alt="" />
+          <img src="./Ellipse 3.svg" className='h-[35%]' alt="" />
         </div>
-        <img src="./X.svg" className='h-[60%]' alt="" />
+        <img src="./X.svg" className='h-[45%] px-2' alt="" />
       </div>
 
       <CardHeader>

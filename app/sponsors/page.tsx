@@ -19,7 +19,17 @@ function Sponsors() {
   return (
     <div>
          <div className='bg-grid1 bg-[#FFDFE7] bg-cover bg-no-repeat min-h-screen overflow-x-hidden'>
+         
         <Image alt='cone' src={cone} className='relative '/>
+
+        <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-[7rem] flex flex-row left-24'>
+            <div className = 'border-r-2 w-[40%] border-black bg-white text-black text-xl font-bold text-center py-1'>
+              Topic#5
+            </div>
+              <div className = 'bg-[#FFDFE7] text-black w-[60%] text-center py-1 text-xl font-bold'>
+                Sponsors
+            </div>
+        </Card>
 
         <Card className='w-[18rem] h-[4rem] text-center border-2 border-black rounded-none relative top-14 left-[44rem]'>
           <CardTitle className='mt-3 font-black text-3xl'>SPONSORS</CardTitle>

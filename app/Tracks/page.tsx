@@ -17,6 +17,14 @@ import Bounty from './_components/Bounty'
 function Tracks() {
   return (
     <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat overflow-x-hidden overflow-y-hidden'>
+       <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-[8rem] flex flex-row left-24'>
+            <div className = 'border-r-2 w-[40%] border-black bg-white text-black text-xl font-bold text-center py-1'>
+              Topic#4
+            </div>
+              <div className = 'bg-[#FFD567] text-black w-[60%] text-center py-1 text-xl font-bold'>
+                Tracks & Prizes
+            </div>
+        </Card>
         <Card className='w-[18rem] h-[4rem] text-center border-2 border-black rounded-none relative top-20 left-[44rem]'>
           <CardTitle className='mt-3 font-black text-3xl'>BOUNTIES</CardTitle>
         </Card>
