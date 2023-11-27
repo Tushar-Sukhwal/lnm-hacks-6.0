@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -76,9 +77,20 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "section-6": "url('/section-6-background.png')",
         "section-7": "url('/topic-7-bg.png')",
+        'waves' : "url('/waves.png')", 
+        'wormhole' : "url('/bg.png')",
+        'third' : "url('/image 10 (1).png')",
+        'frame' : "url('/mainframe.svg')",
+        "grid" : "url('/grid.png')", 
+        "grid1" : "url('/Group 31.png')",
+        "box"  :"url('/box.svg')",
         
       },
+      dropShadow : {
+        '3xl' : '0 35px 35px rgb(221,213,244)'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
+

@@ -1,0 +1,119 @@
+/* styles/TwoColumnLayout.module.css */
+
+.container {
+      display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+height: 52.5625rem;
+background:url(./assests/polka.png) #9BC6FB 50% / cover no-repeat;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+  }
+  
+  .topic {
+    display: flex;
+    width: 21.66181rem;
+height: 3.77738rem;
+border: 2px solid black; 
+color: #000;
+font-family: MesloLGM Nerd Font Mono;
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+ }
+  .topicLeft{
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+stroke-width: 3.181px;
+stroke: #000;
+border: 2px solid black;  
+padding: 0.5rem 0 0 2rem;
+  }
+  .topicRight{
+    width: 100%;
+    height: 100%;
+   background: #59A4FE;
+    stroke-width: 3.181px;
+    stroke: #000;  
+    border: 2px solid black;
+    padding: 0.5rem 0 0 2rem;
+
+}
+
+  
+  .heading {
+    color: #000;
+    font-family: Futura;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2625rem;  }
+  
+  .content {
+    color: #000;
+    text-align: justify;
+    font-family: Public Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15rem;  
+    width: 80%;
+}
+  
+  
+  .imageRectangle {
+   position: relative;
+   width: 24.5rem;
+height: 36.75rem;
+gap: 1rem;
+    border-radius: 1.25rem;
+    border: 6px solid #000;
+    background: #FFF;
+  }
+  
+  .imageRectangle .image {
+    position: absolute;
+    z-index: 100000;
+    width: 19.912rem;
+height: 26.86456rem;
+top: 3rem;
+left: 2rem;
+  }
+  
+  .barcodeCode{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+bottom: 1rem;
+    gap: 2rem;
+  }
+  .barcode{
+    border: 4px solid black;
+  }
+  .purple{
+    position: absolute;
+    top: 5rem;
+  }
+  .green{
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+
+  }
+  .blue{  
+     position: absolute;
+     top: 7rem;
+     right: 0;
+  }

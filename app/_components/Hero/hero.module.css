@@ -1,0 +1,130 @@
+/* styles/ParallaxSection.module.css */
+
+.parallaxContainer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallaxSection {
+  position: relative;
+  height: 100vh;
+  background: url('./assets/bg.png') 50% / cover no-repeat,
+              url('./assets/grid\ hero.png') #9059FF fixed 50% / cover no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theBox {
+  position: absolute;
+  top: 22rem; /* Adjust the top position as needed */
+  left: 20rem; /* Adjust the left position as needed */
+  border: 7.341px solid #000;
+  background: #FFF;
+  width: 11.92856rem;
+  height: 7.54456rem;
+  color: #000;
+  font-family: Futura;
+  font-size: 3.92138rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 1rem 0 0 2rem;
+  z-index: 100;
+}
+
+.boxLeft,
+.boxRight {
+  position: absolute;
+}
+
+.boxLeft {
+  top: 30%;
+  left: 20%;
+  width: 30rem;
+  height: 17rem;
+  background: #FFEA7F;
+  stroke-width: 6.559px;
+  stroke: #000;
+  filter: drop-shadow(21.64362335205078px 16.396682739257812px 0.7278012037277222px #000);
+  font-family: Futura;
+  font-size: 4.48394rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 6rem 0 0 3rem;
+  border: 7.341px solid #000;
+}
+
+.boxRight {
+  top: 30%;
+  right: 20%;
+  width: 30rem;
+  height: 17rem;
+  border: 2.748px solid #000;
+  background: #FFF;
+  box-shadow: 14px 14px 0px 0px #FFC5D3;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-family: MesloLGM Nerd Font Mono;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.linkContainer {
+  position: absolute;
+  left: 53rem;
+  bottom: 8rem;
+
+  width: 28.75rem;
+  height: 3.875rem;
+  fill: #CCE3FF;
+  stroke-width: 2px;
+  stroke: #000;
+  transform: translateY(-20rem);
+  filter: drop-shadow(10.814352035522461px 7.674700736999512px 0.4651334583759308px #000);
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #3498db;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .parallaxSection {
+    flex-direction: column;
+  }
+
+  .boxLeft,
+  .boxRight {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
+
+  .boxLeft {
+    padding: 3rem;
+  }
+
+  .boxRight {
+    margin-top: 1rem;
+  }
+
+  .linkContainer {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: translateY(0);
+  }
+}
