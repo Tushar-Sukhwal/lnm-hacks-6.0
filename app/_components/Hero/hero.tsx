@@ -17,33 +17,30 @@ const ParallaxSectionContent: React.FC = () => {
     parallaxController?.update();
   }, [parallaxController]);
   return (
-    <div className={styles.parallaxContainer}>
       <div className={styles.parallaxSection}>
         {/* THE Box */}
+        <div className={styles.leftContainer}>
         <div ref={refTheBox} className={styles.theBox}>
           The
         </div>
-
-        {/* Rest of the content */}
         <div ref={refLeft} className={styles.boxLeft}>
           LNMHACK
+        </div>
         </div>
         <div ref={refRight} className={styles.boxRight}>
           The Next Biggest Thing Happening Around You is Back!!!
         </div>
         <div ref={refLink} className={styles.linkContainer}>
           <a href="#your-link">
-            {/* <span>
               <FaArrowDown />
-            </span> */}
+            
             LET THE HACKING BEGIN
-            {/* <span>
+          
               <FaArrowDown />
-            </span> */}
           </a>
         </div>
       </div>
-    </div>
+    
   );
 };
 
