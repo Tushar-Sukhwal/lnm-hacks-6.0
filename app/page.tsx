@@ -12,7 +12,7 @@ import Topic7 from "./_components/topic7";
 import Navbar from "./_components/Navbar/navbar";
 import Hero from "./_components/Hero/hero";
 import Marquee from './_components/Marquee/marquee';
-import About from './_components/About/about'
+import About from './About/page'
 import Schedule from "./Schedule/page";
 import CTF from "./CTF/page";
 import Tracks from "./Tracks/page";
