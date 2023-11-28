@@ -13,7 +13,6 @@ background: #FFF;
 
   }
  
-  
   .nav-links {
     display: flex;
     align-items: center;
@@ -110,7 +109,7 @@ background: #FFF;
       display: block;
       font-size: 1.5rem;
       z-index: 1000;
-      transform: translate(200%,55%);
+      transform: translate(160%,55%);
       color: #333;
     }
   

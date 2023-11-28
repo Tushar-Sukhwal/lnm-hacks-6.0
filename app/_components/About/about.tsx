@@ -23,8 +23,7 @@ const About: React.FC = () => {
           About LNM hacks
         </div>
         <div className={styles.content}>
-          <p>
-          LNMHacks is the flagship annual hackathon of The LNM Institute of Information Technology. A 72-hours in-person hackathon with a wide range of tracks in the blockchain field, such as DeFi, DAOs, NFTs, and gaming.           </p>
+          LNMHacks is the flagship annual hackathon of The LNM Institute of Information Technology. A 72-hours in-person hackathon with a wide range of tracks in the blockchain field, such as DeFi, DAOs, NFTs, and gaming.
         </div>
       </div>
       <div className={styles.right}>
@@ -32,7 +31,7 @@ const About: React.FC = () => {
           <Image className={styles.image} src={image} alt="Image" />
           <div className={styles.barcodeCode}>
           <Image className={styles.barcode} src={barcode} alt="Image" />
-          <Image src={code} alt="Image" />
+          <Image className={styles.code}src={code} alt="Image" />
           </div>
           <Image className={styles.purple} src={purple} alt='purple circle'/>
           <Image className={styles.blue} src={blue} alt='blue circle'/>

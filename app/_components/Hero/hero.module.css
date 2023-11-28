@@ -11,7 +11,7 @@
 
 .leftContainer {
   position: relative;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   top: -24%;
   left: -35%;
 }
@@ -30,7 +30,7 @@
   font-weight: 700;
   line-height: normal;
   padding: 0.1rem 0 0 0.8rem;
-  z-index: 100;
+  z-index: 10;
 }
 
 .boxLeft,
@@ -234,8 +234,8 @@
 @media screen and (max-width: 370px) {
 
   .leftContainer {
-    top: 22%;
-    left: 11%;
+    top: 25%;
+    left: 10.5%;
   }
   
   .theBox {
@@ -254,8 +254,8 @@
 
   }
   .boxRight{
-    top: 35%;
-    left: 11%;
+    top: 38%;
+    left: 10.5%;
   }
 
   .linkContainer {
