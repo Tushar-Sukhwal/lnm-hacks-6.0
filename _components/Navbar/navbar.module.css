@@ -3,14 +3,13 @@
 .navbar {
   width: 100%;
   display: flex;
-  padding: 0rem 3.72206rem 0rem 3.65894rem;
+  padding: 0rem .72206rem 0rem .65894rem;
   justify-content: space-around;
   align-items: center;
-
 background: #FFF;
   }
   .logo{
-    width: 20rem;
+    width: 15rem;
   }
  
   
@@ -31,7 +30,6 @@ background: #FFF;
     margin: 10px;
     color: black;
     font-size: 1.4rem;
-    padding: 0.7rem;
     margin-right: 2rem;
   
   
