@@ -7,6 +7,8 @@ import Topic3 from "./_components/topic3";
 import Topic4 from "./_components/topic4";
 import Topic5 from "./_components/topic5";
 import Topic6 from "./_components/topic6";
+import Topic7 from "./_components/topic7";
+
 import Navbar from "./_components/Navbar/navbar";
 import Hero from "./_components/Hero/hero";
 import Marquee from './_components/Marquee/marquee';

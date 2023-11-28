@@ -18,11 +18,11 @@ function Bounty() {
   return (
     <div>
         <Card className='rounded-none h-[3rem] w-[7rem] border-4  border-black z-20 relative top-6 flex flex-row'>
-            <div className = 'border-r-2 w-[40%] border-black bg-[#61C0F5] text-white text-xl text-bold '>
-            <Image alt='sola' src={dollar}  className='w-4' />
+            <div className = 'border-r-2 w-[40%] border-black bg-[#61C0F5] text-white text-xl text-bold  '>
+            <Image alt='sola' src={dollar}  className='w-5 ml-2' />
               
             </div>
-              <div className = 'bg-black text-white w-[60%] text-center py-1 text-xl font-bold'>
+              <div className = 'bg-black text-white w-[60%] text-center py-1 text-2xl font-bold'>
                 850
             </div>
         </Card>
