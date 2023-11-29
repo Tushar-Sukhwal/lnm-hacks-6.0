@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Topic7 = () => {
   return (
-    <div className="w-full border-t-8 border-black ">
+    <div className="w-screen border-t-8 border-black ">
       <div className="bg-section-7 h-[125vh]  w-full bg-[#FFAA75] p-20">
         <div className="md:w-[93%]  border-black border-8  m-auto flex bg-white z-10  py-20 mt-20 shadow-section-7">
           <div className="md:w-[43%] relative text-left font-semibold text-4xl pl-14 pr-40 pt-10 ">

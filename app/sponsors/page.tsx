@@ -13,6 +13,7 @@ import Mid from './_components/Mid'
 import Check from './_components/Check'
 import Image from 'next/image'
 import cone from '../../public/Vector 31 (1).png'
+import banner from "../../public/banner.png"
 
 
 function Sponsors() {
@@ -67,6 +68,8 @@ function Sponsors() {
 
         </div>
     </div>
+    <Image alt="social" src={banner} className='w-full'/>
+    
     </div>
   )
 }

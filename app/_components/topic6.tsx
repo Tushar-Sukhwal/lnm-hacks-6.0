@@ -6,9 +6,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import Image from "next/image";
+
+import banner from "../../public/banner.png"
+
+
 const Topic6 = () => {
   return (
-    <div className=" bg-section-6 w-full h-[130vh]  flex bg-cover repeat-0 bg-[#D1FFEE]">
+    <div className=" bg-section-6 w-screen h-[130vh]  flex bg-cover repeat-0 bg-[#D1FFEE]">
       <div className=" relative w-[40%] border-4 border-black m-auto bg-white p-10 text-center shadow-[-17px_29px_0px_10px_#1a202c]">
         <div className=" absolute -top-20 left-0 flex text-xl font-semibold ">
           <p className="bg-white  border-2 border-black border-r-0 p-2">Topic#6</p>
