@@ -27,9 +27,7 @@ export default function Home() {
     <About />
     <Schedule />
     <CTF/>
-    <Tracks/>
-    <Sponsors />
-    <Topic6 /> 
+    <Topic6 />
     <Topic7 />
     </main>
   );
