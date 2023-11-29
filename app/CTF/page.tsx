@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/card"
 function CTF() {
   return (
-    <div className='bg-wormhole h-fit   bg-no-repeat bg-cover bg-[#AB93CC] overflow-x-hidden '>
+    <div className='bg-wormhole h-fit lg:bg-no-repeat bg-cover bg-[#AB93CC] lg:overflow-x-hidden w-screen '>
         <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-20 flex flex-row left-24'>
             <div className = 'border-r-2 w-[60%] border-black bg-white text-black text-xl font-bold text-center py-1'>
               Topic#3
@@ -24,7 +24,7 @@ function CTF() {
                 CTF
             </div>
         </Card>
-        <div className='flex flex-row gap-x-6 '>
+        <div className='flex flex-row justify-evenly '>
         <div className='p-44'>
         <Content/>
         </div>

@@ -7,28 +7,38 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Image from 'next/image'
+import back from '../../../public/Group 13.png'
+
 
 function Time() {
   return (
-    <Card className='w-[40rem] h-[25rem] relative top-[12rem] left-10 border-4 border-black rounded-none rounded-lg z-10'>
-      <div className='bg-[#FF9AA2] h-[25%] flex flex-row border-b-2 border-black gap-x-[32rem] items-center'>
+    <div >
+       <Card className='w-[20rem] h-[12.5rem] lg:w-[40rem] lg:h-[25rem] relative top-[12rem] left-10 border-4 border-black rounded-none rounded-lg z-10 '>
+      <div className='bg-[#FF9AA2] h-[25%] flex flex-row border-b-2 border-black  lg:gap-x-[32rem] items-center justify-between'>
         <div className='flex flex-row items-center ml-3 gap-x-5  '>
-          <img src="./Ellipse 3.svg" className='h-[35%]' alt="" />
-          <img src="./Ellipse 3.svg" className='h-[35%]' alt="" />
-          <img src="./Ellipse 3.svg" className='h-[35%]' alt="" />
+          <img src="./Ellipse 3.svg" className='h-[15%] lg:h-[35%]' alt="" />
+          <img src="./Ellipse 3.svg" className='h-[15%] lg:h-[35%]' alt="" />
+          <img src="./Ellipse 3.svg" className=' h-[15%] lg:h-[35%]' alt="" />
         </div>
         <img src="./X.svg" className='h-[45%] px-2' alt="" />
       </div>
-
-      <CardHeader>
-        <CardTitle>
+      <div className='h-[75%]'>
+      
+        <CardTitle className='text-3xl'>
           Schedule
         </CardTitle>
-      </CardHeader>
-      <CardContent>
+  
+      <CardContent className='text-xs lg:text-xl py-4 '>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus, omnis ex natus assumenda optio, soluta asperiores commodi modi, officia harum fugiat beatae eveniet explicabo molestias vero? In, commodi fugit.
       </CardContent>
+      </div>
+     
     </Card>
+    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[100%] relative  lg:bottom-[8rem]  ' />
+
+    </div>
+   
   )
 }
 

@@ -18,9 +18,9 @@ import cone from '../../public/Vector 31 (1).png'
 function Sponsors() {
   return (
     <div>
-         <div className='bg-grid1 bg-[#FFDFE7] bg-cover bg-no-repeat min-h-screen overflow-x-hidden'>
+         <div className='bg-grid1 bg-[#FFDFE7] bg-cover bg-no-repeat min-h-screen overflow-x-hidden lg:w-screen '>
          
-        <Image alt='cone' src={cone} className='relative '/>
+        <Image alt='cone' src={cone} className='relative lg:top-0 '/>
 
         <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-[7rem] flex flex-row left-24'>
             <div className = 'border-r-2 w-[40%] border-black bg-white text-black text-xl font-bold text-center py-1'>
@@ -43,7 +43,7 @@ function Sponsors() {
                 <Big/>
             </div>
         </div>
-        <div className='grid grid-cols-3  px-10 relative left-32'>
+        <div className='grid grid-cols-3 place-content-center px-10 relative left-32'>
             <Mid/>
             <Mid/>
             <Mid/>

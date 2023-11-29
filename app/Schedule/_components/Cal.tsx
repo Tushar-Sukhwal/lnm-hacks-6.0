@@ -64,7 +64,7 @@ function Cal() {
   
 
   return (
-   <Card className='w-[25rem] h-[30rem] mt-14 border-4 border-black divide-y-4 divide-black rounded-none shadow-[11px_26px_0px_4px_#B595FB]'>
+   <Card className='w-[15.5rem] h-[18rem] lg:w-[25rem] lg:h-[30rem] mt-14 border-4 border-black divide-y-4 divide-black rounded-none shadow-[11px_26px_0px_4px_#B595FB]'>
     <div className='grid grid-cols-3 divide-x-4 divide-black '>
       <button className={`py-4 px-8 text-xl font-bold ${isDay1?'bg-[#C2A5FD]':'bg-white'}`}onClick={dayOneHandler} >DAY-1</button>
       <button className={`py-4 px-8 text-xl  font-bold ${isDay2?'bg-[#C2A5FD]':'bg-white'}`}onClick={dayTwoHandler} >DAY-2</button>

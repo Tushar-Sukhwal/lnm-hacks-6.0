@@ -16,7 +16,7 @@ import Bounty from './_components/Bounty'
 
 function Tracks() {
   return (
-    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat overflow-x-hidden overflow-y-hidden'>
+    <div className='bg-third bg-[#FFD567] bg-cover bg-no-repeat overflow-x-hidden overflow-y-hidden w-screen border-b-4 border-black'>
        <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-[8rem] flex flex-row left-24'>
             <div className = 'border-r-2 w-[40%] border-black bg-white text-black text-xl font-bold text-center py-1'>
               Topic#4
@@ -31,7 +31,7 @@ function Tracks() {
 
         
 
-        <div className='grid grid-cols-3 gap-4 relative top-14 left-20 px-10 py-20 items-center'>
+        <div className='grid grid-cols-3 gap-4 relative top-14 left-20 px-10 py-20 l items-center mb-10 ml-10'>
           <Bounty/>
           <Bounty/>
           <Bounty/>
