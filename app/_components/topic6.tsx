@@ -13,8 +13,8 @@ import banner from "../../public/banner.png"
 
 const Topic6 = () => {
   return (
-    <section id="faq" className=" bg-section-6 w-screen h-[130vh]  flex bg-cover repeat-0 bg-[#D1FFEE]">
-      <div className=" relative w-[40%] border-4 border-black m-auto bg-white p-10 text-center shadow-[-17px_29px_0px_10px_#1a202c]">
+    <section id="faq" className=" bg-section-6 w-screen md:h-[130vh]  md:flex-row flex-col  flex bg-cover repeat-0 bg-[#D1FFEE] ">
+      <div className=" relative md:w-[40%] w-[80%] mt-28 border-4 border-black m-auto bg-white md:p-10 p-5 text-center shadow-[-17px_29px_0px_10px_#1a202c]">
         <div className=" absolute -top-20 left-0 flex text-xl font-semibold ">
           <p className="bg-white  border-2 border-black border-r-0 p-2">Topic#6</p>
           <p className="bg-[#88FFD1]  border-2 border-black p-2">FAQs</p>
@@ -47,7 +47,7 @@ const Topic6 = () => {
           Submit
         </button>
       </div>
-      <div className="w-[35%] font-bold m-auto text-xl">
+      <div className="md:w-[35%] mt-20 font-bold m-auto text-xl p-7 md:p-0 mb-10">
         {" "}
         <p className=" font-bold text-4xl m-auto text-center w-[90%] mb-10">
           Frequently Asked Questions
