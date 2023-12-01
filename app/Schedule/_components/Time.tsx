@@ -13,13 +13,13 @@ import back from '../../../public/Group 13.png'
 
 function Time() {
   return (
-    <div >
-       <Card className='w-[20rem] h-[12.5rem] lg:w-[40rem] lg:h-[25rem] relative top-[12rem] left-10 border-4 border-black rounded-none rounded-lg z-10 '>
+    <div  >
+       <Card className='w-[20rem] h-[12.5rem] lg:w-[40rem] lg:h-[25rem] relative top-[12rem] left-4 lg:left-10  border-4 border-black rounded-none rounded-lg z-10 '>
       <div className='bg-[#FF9AA2] h-[25%] flex flex-row border-b-2 border-black  lg:gap-x-[32rem] items-center justify-between'>
         <div className='flex flex-row items-center ml-3 gap-x-5  '>
-          <img src="./Ellipse 3.svg" className='h-[15%] lg:h-[35%]' alt="" />
-          <img src="./Ellipse 3.svg" className='h-[15%] lg:h-[35%]' alt="" />
-          <img src="./Ellipse 3.svg" className=' h-[15%] lg:h-[35%]' alt="" />
+          <img src="./Ellipse 3.svg" className='w-[10%] lg:w-[45%]' alt="" />
+          <img src="./Ellipse 3.svg" className='w-[10%] lg:w-[45%]' alt="" />
+          <img src="./Ellipse 3.svg" className=' w-[10%] lg:w-[45%]' alt="" />
         </div>
         <img src="./X.svg" className='h-[45%] px-2' alt="" />
       </div>
@@ -35,7 +35,7 @@ function Time() {
       </div>
      
     </Card>
-    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[100%] relative  lg:bottom-[8rem]  ' />
+    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[90%] relative top-[4rem] left-[6rem]   ' />
 
     </div>
    
