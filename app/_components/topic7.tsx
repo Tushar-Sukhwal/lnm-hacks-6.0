@@ -35,7 +35,11 @@ const Topic7 = () => {
       <div className="bg-[#2F2138] md:px-20 px-16 pt-10 pb-6">
         <div className="md:flex-row flex flex-col  justify-between md:items-center">
           <div className="">
-            <img src="/footer-logo.png" alt="" className="h-20 w-auto m-auto md:m-0"   />
+            <img
+              src="/footer-logo.png"
+              alt=""
+              className="h-20 w-auto m-auto md:m-0"
+            />
             <img
               src="/footer-text-logo.png"
               alt=""
@@ -57,7 +61,7 @@ const Topic7 = () => {
             </div>
           </div>
           <div className="text-white underline flex flex-col my-auto md:justify-start md:items-end justify-center mt-10 items-center mb-10 text-2xl md:text-base">
-            <div className="flex justify-space-around gap-3" >
+            <div className="flex justify-space-around gap-3">
               <a href="">About</a>
               <a href="">Schedule</a>
               <a href="">CTF</a>
@@ -76,9 +80,12 @@ const Topic7 = () => {
           Designed with ❤️ in 🇮🇳 by Suryansh Chauhan , Aditya Karanwal & Akshat
           Singh
         </div>
+        <div className="mt-3 text-white font-semibold w-full text-center">
+          Made with ❤️ in 🇮🇳 by Tushar Sukhwal, Rudransh Singhal and Ayush
+          Bansal
+        </div>
       </div>
     </section>
   );
 };
 export default Topic7;
-
