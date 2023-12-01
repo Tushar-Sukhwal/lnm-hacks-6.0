@@ -2,10 +2,11 @@ import Image from "next/image";
 
 const Topic7 = () => {
   return (
-    <div className="w-screen border-t-8 border-black ">
-      <div className="bg-section-7 h-[125vh]  w-full bg-[#FFAA75] p-20">
+    <section id="venue" className="w-screen border-t-8 border-black ">
+      <div className="bg-section-7   w-full bg-[#FFAA75] p-20 pb-40">
         <div className="md:w-[93%]  border-black border-8  m-auto flex bg-white z-10  py-20 mt-20 shadow-section-7">
           <div className="md:w-[43%] relative text-left font-semibold text-4xl pl-14 pr-40 pt-10 ">
+            {/* topic (absolute element ) */}
             <div className="absolute left-0 top-[-150px] font-normal flex text-xl">
               <div className="border-2 border-black px-2 border-r-0 bg-white">
                 Topic #7
@@ -14,6 +15,7 @@ const Topic7 = () => {
                 Venue
               </div>
             </div>
+            {/* end  */}
             The LNM Institute Of Information Technology LNMIIT
             <br className="pb-2" />
             <span className=" font-light text-2xl gap-2 leading-tight ">
@@ -74,7 +76,7 @@ const Topic7 = () => {
           Singh
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Topic7;
