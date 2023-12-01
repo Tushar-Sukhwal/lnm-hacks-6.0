@@ -26,7 +26,7 @@ export default function Home() {
       <Marquee text=" THINK BUILDING, THINK LNM HACKS" />
     <About />
     <Schedule />
-    {/* <CTF/> */}
+    <CTF/>
     <Topic6 />
     <Topic7 />
     </main>

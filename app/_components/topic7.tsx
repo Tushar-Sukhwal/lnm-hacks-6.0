@@ -3,11 +3,11 @@ import Image from "next/image";
 const Topic7 = () => {
   return (
     <section id="venue" className="w-screen border-t-8 border-black  ">
-      <div className="bg-section-7   w-full bg-[#FFAA75] p-20 pb-40">
-        <div className="md:w-[93%]  border-black border-8  m-auto flex-col md:flex-row flex bg-white z-10  py-20 mt-20 shadow-section-7">
-          <div className="md:w-[43%] w-full relative text-left font-semibold text-4xl pl-14 pr-40 pt-10 ">
+      <div className="bg-section-7 w-full bg-[#FFAA75] md:p-20 p-7 pb-40">
+        <div className="relative md:w-[93%]  border-black border-8  m-auto flex-col md:flex-row flex bg-white z-10  md:py-20 pb-10  mt-20 shadow-section-7 ">
+          <div className="md:w-[43%] w-full   md:text-left font-semibold text-4xl md:pl-14 md:pr-40 md:py-10 p-8 pt-14 ">
             {/* topic (absolute element ) */}
-            <div className="absolute left-0 top-[-150px] font-normal flex text-xl">
+            <div className="absolute left-0 md:top-[-110px] top-[-80px] font-normal flex text-xl">
               <div className="border-2 border-black px-2 border-r-0 bg-white">
                 Topic #7
               </div>
@@ -26,22 +26,22 @@ const Topic7 = () => {
               Get Directions
             </button>
           </div>
-          <div className="w-[50%] h-auto text-right ">
+          <div className="md:w-[50%] h-auto text-right md:p-0 p-4 md:m-0 m-auto mt-3 md:mt-0">
             <img src="/lnmiit-top-view.png" alt="" />
           </div>
         </div>
       </div>
       {/* footer */}
-      <div className="bg-[#2F2138] px-20 pt-10 pb-6">
-        <div className="flex justify-between">
-          <div className="w-">
-            <img src="/footer-logo.png" alt="" className="h-20 w-auto" />
+      <div className="bg-[#2F2138] md:px-20 px-16 pt-10 pb-6">
+        <div className="md:flex-row flex flex-col  justify-between md:items-center">
+          <div className="">
+            <img src="/footer-logo.png" alt="" className="h-20 w-auto m-auto md:m-0"   />
             <img
               src="/footer-text-logo.png"
               alt=""
-              className="h-14 w-auto mb-4"
+              className="h-14 w-auto mb-4 m-auto "
             />
-            <div className="flex  justify-between w-[200px]">
+            <div className="flex  justify-between md:w-[200px]">
               <button className="">
                 <img src="/TwitterX.png" alt="" className="h-10 w-auto" />
               </button>
@@ -56,7 +56,7 @@ const Topic7 = () => {
               </button>
             </div>
           </div>
-          <div className="text-white underline flex flex-col my-auto justify-start items-end ">
+          <div className="text-white underline flex flex-col my-auto md:justify-start md:items-end justify-center mt-10 items-center mb-10 text-2xl md:text-base">
             <div className="flex justify-space-around gap-3" >
               <a href="">About</a>
               <a href="">Schedule</a>
