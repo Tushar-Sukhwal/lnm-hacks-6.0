@@ -35,7 +35,7 @@ function Time() {
       </div>
      
     </Card>
-    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[90%] relative top-[4rem] left-[6rem]   ' />
+    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[90%] relative top-[1rem] left-[6rem]   ' />
 
     </div>
    
