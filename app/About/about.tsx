@@ -13,7 +13,7 @@ import green from './assests/green.svg'
 
 const About: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <section id="about" className={styles.container}>
       <div className={styles.left}>
         <div className={styles.topic}>
           <div className={styles.topicLeft}>Topic#1</div>
@@ -38,7 +38,7 @@ const About: React.FC = () => {
           <Image className={styles.green} src={green} alt='green circle'/>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

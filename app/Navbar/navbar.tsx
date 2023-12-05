@@ -6,6 +6,7 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import logo from './assests/lnm hacks logo.svg'
 import Link from 'next/link';
+import ScrollLink from '@/components/ScrollLink';
 
 interface NavbarProps {}
 
@@ -24,13 +25,13 @@ const Navbar: NextPage<NavbarProps> = () => {
     <header className={styles.navbar}>
       <Image className={styles.logo} src={logo} width={800}  height={500} alt=""/>
       <nav className={`${styles['nav-links']} ${isNavOpen ? styles['show-nav'] : styles['hide-nav']}`}>
-        <Link href="/about">About</Link>
-        <Link href="/schedule">Schedule</Link>
-        <Link href="/ctf">CTF</Link>
-        <Link href="/track&prizes">Tracks & Prizes</Link>
-        <Link href="/sponsors">Our Sponsors</Link>
-        <Link href="/faqs">FAQs</Link>
-        <Link href="/venue">Venue</Link>
+        <ScrollLink href="#about">About</ScrollLink>
+        <ScrollLink href="#schedule">Schedule</ScrollLink>
+        <ScrollLink href="#ctf">CTF</ScrollLink>
+        <ScrollLink href="/track&prizes">Tracks & Prizes</ScrollLink>
+        <ScrollLink href="/sponsors">Our Sponsors</ScrollLink>
+        <ScrollLink href="#faqs">FAQs</ScrollLink>
+        <ScrollLink href="#venue">Venue</ScrollLink>
       </nav>
       <div className={styles['nav-icon']} onClick={handleNavClick}>
         {isNavOpen ? <FaTimes /> : <FaBars />}
