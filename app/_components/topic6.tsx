@@ -111,7 +111,7 @@ const Topic6 = () => {
           Frequently Asked Questions
         </p>
         <Accordion type="single" collapsible className="w-full text-left">
-          <AccordionItem value="item-1">
+          <AccordionItem value="item-1 text-left">
             <AccordionTrigger className="text-xl">
               1. Can I participate remotely ?
             </AccordionTrigger>
@@ -120,8 +120,8 @@ const Topic6 = () => {
               not applicable.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
+          <AccordionItem value="item-2 text-left">
+            <AccordionTrigger className="text-left">
               2. I&apos;m a beginner, can I participate?
             </AccordionTrigger>
             <AccordionContent>
@@ -131,7 +131,7 @@ const Topic6 = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-left">
               3. Will you support or reimburse our travel expense?
             </AccordionTrigger>
             <AccordionContent>
@@ -140,7 +140,7 @@ const Topic6 = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-left">
               4. How much does it cost to participate?
             </AccordionTrigger>
             <AccordionContent>
@@ -162,7 +162,7 @@ const Topic6 = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-6">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-left">
               6. What are sleeping arrangements?
             </AccordionTrigger>
             <AccordionContent>
