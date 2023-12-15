@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -6,16 +8,72 @@ import {
 } from "@/components/ui/accordion";
 
 import Image from "next/image";
-
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from "firebase/compat/app";
 import banner from "../../public/banner.png";
+import React, { useState } from "react";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  serverTimestamp,
+} from "firebase/firestore";
 
 const Topic6 = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  // Import the functions you need from the SDKs you need
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_PUBLIC_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    databaseUrl: process.env.NEXT_PUBLIC_FIREBASE_DB_URL,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  };
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        message,
+        timestamp: serverTimestamp(),
+      });
+
+      // Reset the form after submitting
+      setName("");
+      setEmail("");
+      setMessage("");
+
+      console.log("Data successfully sent to Firebase!");
+    } catch (error) {
+      console.error("Error sending data to Firebase:", error);
+    }
+  };
+
   return (
     <section
       id="faq"
       className=" bg-section-6 w-screen md:h-[130vh]  md:flex-row flex-col  flex bg-cover repeat-0 bg-[#D1FFEE] "
     >
-      <div className=" relative md:w-[40%] w-[80%] mt-28 border-4 border-black m-auto bg-white md:p-10 p-5 text-center shadow-[-17px_29px_0px_10px_#1a202c]">
+      <form
+        className=" relative md:w-[40%] w-[80%] mt-28 border-4 border-black m-auto bg-white md:p-10 p-5 text-center shadow-[-17px_29px_0px_10px_#1a202c]"
+        onSubmit={handleSubmit}
+      >
         <div className=" absolute -top-20 left-0 flex text-xl font-semibold ">
           <p className="bg-white  border-2 border-black border-r-0 p-2">
             Topic#6
@@ -30,6 +88,8 @@ const Topic6 = () => {
           <input
             type="name"
             className="border-2 border-black rounded-md h-14"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
           />
         </div>
         <div className="flex flex-col align-left w-[80%] m-auto mb-7">
@@ -37,6 +97,8 @@ const Topic6 = () => {
           <input
             type="email"
             className="border-2 border-black rounded-md h-14"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
         </div>
         <div className="flex flex-col align-left w-[80%] m-auto mb-7">
@@ -44,12 +106,17 @@ const Topic6 = () => {
           <input
             type="message"
             className="border-2 border-black rounded-md h-28"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
           />
         </div>
-        <button className="bg-black text-white text-center m-auto py-3 px-14 rounded-xl mt-7 font-extrabold text-[22px]">
+        <button
+          className="bg-black text-white text-center m-auto py-3 px-14 rounded-xl mt-7 font-extrabold text-[22px]"
+          type="submit"
+        >
           Submit
         </button>
-      </div>
+      </form>
       <div className="md:w-[35%] mt-20 font-bold m-auto text-xl p-7 md:p-0 mb-10">
         {" "}
         <p className=" font-bold text-4xl m-auto text-center w-[90%] mb-10">
