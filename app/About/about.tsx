@@ -23,7 +23,7 @@ const About: React.FC = () => {
           About LNM hacks
         </div>
         <div className={styles.content}>
-          LNMHacks is the flagship annual hackathon of The LNM Institute of Information Technology. A 72-hours in-person hackathon with a wide range of tracks in the blockchain field, such as DeFi, DAOs, NFTs, and gaming.
+        Prepare for an innovation extravaganza at LNM Hacks, the focal point of Tech-Fest, Plinth! Dive into the 48-hour excitement of LNMHacks 6.0, where coding novices and seasoned pros come together for a transformative journey. Unleash your genius and shape your coding evolution!
         </div>
       </div>
       <div className={styles.right}>

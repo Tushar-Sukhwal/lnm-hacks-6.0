@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -8,15 +7,19 @@ import {
 
 import Image from "next/image";
 
-import banner from "../../public/banner.png"
-
+import banner from "../../public/banner.png";
 
 const Topic6 = () => {
   return (
-    <section id="faq" className=" bg-section-6 w-screen md:h-[130vh]  md:flex-row flex-col  flex bg-cover repeat-0 bg-[#D1FFEE] ">
+    <section
+      id="faq"
+      className=" bg-section-6 w-screen md:h-[130vh]  md:flex-row flex-col  flex bg-cover repeat-0 bg-[#D1FFEE] "
+    >
       <div className=" relative md:w-[40%] w-[80%] mt-28 border-4 border-black m-auto bg-white md:p-10 p-5 text-center shadow-[-17px_29px_0px_10px_#1a202c]">
         <div className=" absolute -top-20 left-0 flex text-xl font-semibold ">
-          <p className="bg-white  border-2 border-black border-r-0 p-2">Topic#6</p>
+          <p className="bg-white  border-2 border-black border-r-0 p-2">
+            Topic#6
+          </p>
           <p className="bg-[#88FFD1]  border-2 border-black p-2">FAQs</p>
         </div>
         <p className="text-[40px] text-center font-extrabold mb-10">
@@ -52,66 +55,81 @@ const Topic6 = () => {
         <p className=" font-bold text-4xl m-auto text-center w-[90%] mb-10">
           Frequently Asked Questions
         </p>
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full text-left">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-xl">
-              Can I participate remotely ?
+              1. Can I participate remotely ?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              LNM Hacks is an in person hackathon. So remote participation is
+              not applicable.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>
-              Will you support or reimburse our travel expenses ?
+              2. I&apos;m a beginner, can I participate?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
+              Absolutely, along with several workshops targeted for beginners we
+              have mentors and resources. Come learn and experience your first
+              hackathon.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>Can I participate remotely ?</AccordionTrigger>
+            <AccordionTrigger>
+              3. Will you support or reimburse our travel expense?
+            </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              LNM hacks is a community hackathon, so unfortunately we would not
+              be able to support you with travel.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>
-              I am a beginner, can I participate ?
+              4. How much does it cost to participate?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              Nothing, participation in LNM hacks is absolutely FREE!!🎉
+              We&apos;ll have meals, snacks, and beverages onsite at the
+              hackathon, in addition to swags, prizes, fun mini-events and more.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger>
-              Will you support or reimburse our travel expenses ?
+            <AccordionTrigger className="text-left">
+              5. What is the maximum team size? Can I participate as a solo
+              hacker?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              We encourage you to make a team of minimum 2 and maximum 4
+              members. If you are a Solo Hacker and do not have a team, you can
+              still register and we will help you find a team during the
+              hackathon.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-6">
-            <AccordionTrigger>Can I participate remotely ?</AccordionTrigger>
+            <AccordionTrigger>
+              6. What are sleeping arrangements?
+            </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              We will have a supervised sleeping space for you to rest and sleep
+              at the venue. We recommend bringing your own blanket if you need
+              one.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-7">
-            <AccordionTrigger>
-              I am a beginner, can I participate ?
+            <AccordionTrigger className="text-left">
+              7. My parents guardians will come along with me, can they stay at
+              venue?
             </AccordionTrigger>
             <AccordionContent>
-              Yes. It&apos;s animated by default, but you can disable it if you
-              prefer.
+              The answer is No. Arrangements like sleeping area, food, etc., are
+              only for the attendees. We recommend you to find a stay option for
+              them near the venue. They can drop you at the hackathon venue on
+              19th Jan and can pick you on 21st Jan but can not stay at venue
+              during the hackathon as we do not have any provision for them.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-8">
+          {/* <AccordionItem value="item-8">
             <AccordionTrigger>
               Will you support or reimburse our travel expenses ?
             </AccordionTrigger>
@@ -119,11 +137,10 @@ const Topic6 = () => {
               Yes. It&apos;s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
-          </AccordionItem>
+          </AccordionItem> */}
         </Accordion>
       </div>
     </section>
   );
 };
 export default Topic6;
-
