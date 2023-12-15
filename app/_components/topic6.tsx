@@ -68,7 +68,7 @@ const Topic6 = () => {
           </p>
           <p className="bg-[#88FFD1]  border-2 border-black p-2">FAQs</p>
         </div>
-        <p className="text-[40px] text-center font-extrabold mb-10">
+        <p className="text-[40px] text-center font-extrabold mb-10 font-futura">
           Ask Your Queries
         </p>
         <div className="flex flex-col align-left w-[80%] m-auto mb-7">
@@ -107,12 +107,12 @@ const Topic6 = () => {
       </form>
       <div className="md:w-[35%] mt-20 font-bold m-auto text-xl p-7 md:p-0 mb-10">
         {" "}
-        <p className=" font-bold text-4xl m-auto text-center w-[90%] mb-10">
+        <p className=" font-bold text-4xl m-auto text-center w-[90%] mb-10 font-futura">
           Frequently Asked Questions
         </p>
         <Accordion type="single" collapsible className="w-full text-left">
           <AccordionItem value="item-1 text-left">
-            <AccordionTrigger className="text-xl">
+            <AccordionTrigger className="text-xl font-publicSans">
               1. Can I participate remotely ?
             </AccordionTrigger>
             <AccordionContent>

@@ -9,6 +9,11 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      publicSans: ["Public Sans", "sans-serif"],
+      lexendMega: ["Lexend Mega", "sans-serif"],
+      futura: ["futura", "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
