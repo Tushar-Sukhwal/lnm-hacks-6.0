@@ -7,11 +7,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import Image from "next/image";
+
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import firebase from "firebase/compat/app";
-import banner from "../../public/banner.png";
 import React, { useState } from "react";
 import {
   getFirestore,
@@ -40,7 +37,7 @@ const Topic6 = () => {
     appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   };
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+
   const db = getFirestore(app);
 
   const handleSubmit = async (e: React.FormEvent) => {
