@@ -7,7 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-
 import { initializeApp } from "firebase/app";
 import React, { useState } from "react";
 import {
@@ -16,19 +15,12 @@ import {
   addDoc,
   serverTimestamp,
 } from "firebase/firestore";
+import toast from "react-hot-toast";
 
 const Topic6 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  // Import the functions you need from the SDKs you need
-
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_PUBLIC_API_KEY,
     authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -37,26 +29,25 @@ const Topic6 = () => {
     appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   };
   const app = initializeApp(firebaseConfig);
-
   const db = getFirestore(app);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     try {
+      if (name === "" || email === "" || message === "") {
+        toast.error("Please fill all the fields!");
+        return;
+      }
       await addDoc(collection(db, "contacts"), {
         name,
         email,
         message,
         timestamp: serverTimestamp(),
       });
-
-      // Reset the form after submitting
       setName("");
       setEmail("");
       setMessage("");
-
       console.log("Data successfully sent to Firebase!");
+      toast.success("Your Query has been submitted successfully!");
     } catch (error) {
       console.error("Error sending data to Firebase:", error);
     }
