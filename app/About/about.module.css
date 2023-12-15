@@ -1,283 +1,266 @@
 /* styles/TwoColumnLayout.module.css */
 
 .container {
-      display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-    width: 100%;
-height: 52.5625rem;
-background:url(./assests/polka.png) #9BC6FB 50% / cover no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  height: 52.5625rem;
+  background: url(./assests/polka.png) #9bc6fb 50% / cover no-repeat;
+  padding-top: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+.topic {
+  display: flex;
+  width: 21.66181rem;
+  height: 3.77738rem;
+  border: 2px solid black;
+  color: #000;
+  font-family: MesloLGM Nerd Font Mono;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topicLeft {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  stroke-width: 3.181px;
+  stroke: #000;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+.topicRight {
+  width: 100%;
+  height: 100%;
+  background: #59a4fe;
+  stroke-width: 3.181px;
+  stroke: #000;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.heading {
+  color: #000;
+  font-family: Futura;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+
+.content {
+  color: #000;
+  text-align: start;
+  font-family: Public Sans;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-spacing: 0.5rem;
+  width: 80%;
+}
+
+.imageRectangle {
+  position: relative;
+  width: 24.5rem;
+  height: 36.75rem;
+  gap: 1rem;
+  border-radius: 1.25rem;
+  border: 6px solid #000;
+  background: #fff;
+}
+
+.imageRectangle .image {
+  position: absolute;
+  z-index: 100000;
+  width: 84%;
+  height: 75%;
+  top: 3rem;
+  left: 2rem;
+}
+
+.barcodeCode {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 10%;
+  bottom: 1rem;
+  gap: 2rem;
+}
+.barcode {
+  width: 100%;
+  border: 4px solid black;
+}
+.code {
+  width: 100%;
+}
+.purple {
+  position: absolute;
+  width: 35%;
+
+  top: 5rem;
+}
+.green {
+  position: absolute;
+  width: 22%;
+  right: 0;
+  bottom: 10rem;
+}
+.blue {
+  position: absolute;
+  width: 26%;
+  top: 7rem;
+  right: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .topic {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5em;
+    text-align: center;
   }
-  
-  .left {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+
+  .heading {
+    font-size: 2.5em;
+  }
+
+  .content {
+    font-size: 1.5em;
+  }
+
+  .imageRectangle {
+    width: 20.5rem;
+    height: 30.75rem;
+  }
+
+  .barcode {
     width: 50%;
   }
-  
-  .topic {
-    display: flex;
-    width: 21.66181rem;
-height: 3.77738rem;
-border: 2px solid black; 
-color: #000;
-font-family: MesloLGM Nerd Font Mono;
-font-size: 2em;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
- }
-  .topicLeft{
-    width: 100%;
-    height: 100%;
-    background: #FFF;
-stroke-width: 3.181px;
-stroke: #000;
-border: 2px solid black;  
-text-align: center;
-padding: 0.5rem 0 0 0;
+  .code {
+    width: 30%;
   }
-  .topicRight{
-    width: 100%;
-    height: 100%;
-   background: #59A4FE;
-    stroke-width: 3.181px;
-    stroke: #000;  
-    border: 2px solid black;
-    text-align: center;
-    padding: 0.5rem 0 0 0;
+  .purple {
+    width: 30%;
+  }
+  .green {
+    width: 20%;
+  }
+  .blue {
+    width: 23%;
+  }
 }
 
-  
-  .heading {
-    color: #000;
-    font-family: Futura;
-    font-size: 3em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.1rem;  }
-  
-  .content {
-    color: #000;
-    text-align: start;
-    font-family: Public Sans;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    word-spacing: 0.5rem;  
-    width: 80%;
-}
-  
-  
-  .imageRectangle {
-   position: relative;
-   width: 24.5rem;
-height: 36.75rem;
-gap: 1rem;
-    border-radius: 1.25rem;
-    border: 6px solid #000;
-    background: #FFF;
-  }
-  
-  .imageRectangle .image {
-    position: absolute;
-    z-index: 100000;
-    width: 84%;
-height: 75%;
-top: 3rem;
-left: 2rem;
-  }
-  
-  .barcodeCode{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 10%;
-bottom: 1rem;
-    gap: 2rem;
-  }
-  .barcode{
-    width: 100%;
-    border: 4px solid black;
-  }
-  .code{
-    width: 100%;
-  }
-  .purple{
-    position: absolute;
-    width: 35%;
-
-    top: 5rem;
-  }
-  .green{
-    position: absolute;
-    width: 22%;
-    right: 0;
-    bottom: 10rem;
-
-  }
-  .blue{  
-     position: absolute;
-     width: 26%;
-     top: 7rem;
-     right: 0;
-  }
-
-  @media screen and (max-width:950px) {
-   
-    .topic {
-      width: 15rem;
-  height: 3rem;
-  font-size: 1.5em;
-  text-align: center;
-   }
-     
-    .heading {
-      
-      font-size: 2.5em;
-    
-      }
-    
-    .content {
-      font-size: 1.5em;
-      
-  }
-    
-    
-    .imageRectangle {
-     width: 20.5rem;
-  height: 30.75rem;
-  
-    }
-    
-    
-    .barcode{
-      width: 50%;
-    }
-    .code{
-      width: 30%;
-    }
-    .purple{
-      width: 30%;
-
-    }
-    .green{
-      width: 20%;
-
-  
-    }
-    .blue{  
-      width: 23%;
-
-    }
-  }
-
-  @media screen and (max-width:768px) {
-   .container{
+@media screen and (max-width: 768px) {
+  .container {
     flex-direction: column;
     padding: 1rem;
-   }
-   .left,.right{
+  }
+  .left,
+  .right {
     width: 100%;
-   }
-    .content {
-      font-size: 1.5em;
-      width: 95%;
-      
+  }
+  .content {
+    font-size: 1.5em;
+    width: 95%;
   }
 
-    .imageRectangle {
-     width: 28.5rem;
-     height: 25.75rem;
-    }
-    
-  .imageRectangle .image {
-top: 2rem;
-left: 2.3rem;
+  .imageRectangle {
+    width: 28.5rem;
+    height: 25.75rem;
   }
-  .barcodeCode{
-    bottom:2%;
+
+  .imageRectangle .image {
+    top: 2rem;
+    left: 2.3rem;
+  }
+  .barcodeCode {
+    bottom: 2%;
     left: 7%;
     gap: 6rem;
   }
-    .barcode{
-      width: 40%;
-    }
-    .code{
-      width: 20%;
-    }
-    .purple{
-      width: 25%;
-    }
-    .green{
-      bottom: 6rem;
-      width: 18%;
+  .barcode {
+    width: 40%;
+  }
+  .code {
+    width: 20%;
+  }
+  .purple {
+    width: 25%;
+  }
+  .green {
+    bottom: 6rem;
+    width: 18%;
+  }
+  .blue {
+    top: 4rem;
+    width: 20%;
+  }
+}
 
-    }
-    .blue{  
-      top: 4rem;
-      width: 20%;
-
-    }
+@media screen and (max-width: 500px) {
+  .imageRectangle {
+    width: 23.5rem;
   }
 
-  @media screen and (max-width:500px) {
-     .imageRectangle {
-     width: 23.5rem;
-    }
-    
   .imageRectangle .image {
-left: 1.9rem;
+    left: 1.9rem;
   }
-  .barcodeCode{
-    bottom:3%;
+  .barcodeCode {
+    bottom: 3%;
     left: 2%;
     gap: 4rem;
   }
 }
 
-  @media screen and (max-width:420px) {
-     .imageRectangle {
-     width: 20rem;
-    }
-    
-  .imageRectangle .image {
-   left: 1.7rem;
+@media screen and (max-width: 420px) {
+  .imageRectangle {
+    width: 20rem;
   }
-  
+
+  .imageRectangle .image {
+    left: 1.7rem;
+  }
 }
 
-  @media screen and (max-width:370px) {
-     .imageRectangle {
-     width: 18rem;
-     height: 18rem;
-    }
-    
+@media screen and (max-width: 370px) {
+  .imageRectangle {
+    width: 18rem;
+    height: 18rem;
+  }
+
   .imageRectangle .image {
     top: 1.1rem;
-   left: 1.4rem;
-    
-      }
-      .barcodeCode{
-        bottom:2%;
-        left: 0%;
-        gap: 3rem;
-      }
-       
-        .purple{
-          top: 3rem;
-          width: 25%;
-        }
-        .green{
-          bottom: 4rem;   
-        }
-        .blue{  
-          top: 3rem;  
-        }
-  
+    left: 1.4rem;
+  }
+  .barcodeCode {
+    bottom: 2%;
+    left: 0%;
+    gap: 3rem;
+  }
+
+  .purple {
+    top: 3rem;
+    width: 25%;
+  }
+  .green {
+    bottom: 4rem;
+  }
+  .blue {
+    top: 3rem;
+  }
 }

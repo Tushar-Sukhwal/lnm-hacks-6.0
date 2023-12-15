@@ -63,16 +63,16 @@ const Topic6 = () => {
         onSubmit={handleSubmit}
       >
         <div className=" absolute -top-20 left-0 flex text-xl font-semibold ">
-          <p className="bg-white  border-2 border-black border-r-0 p-2">
+          <p className="bg-white  border-2 border-black border-r-0 p-2 font-meslo font-bold ">
             Topic#6
           </p>
-          <p className="bg-[#88FFD1]  border-2 border-black p-2">FAQs</p>
+          <p className="bg-[#88FFD1]  border-2 border-black p-2 font-meslo font-bold ">FAQs</p>
         </div>
         <p className="text-[40px] text-center font-extrabold mb-10 font-futura">
           Ask Your Queries
         </p>
         <div className="flex flex-col align-left w-[80%] m-auto mb-7">
-          <p className="text-left font-semibold">Name</p>
+          <p className="text-left font-semibold font-publicSans">Name</p>
           <input
             type="name"
             className="border-2 border-black rounded-md h-14"
@@ -81,7 +81,7 @@ const Topic6 = () => {
           />
         </div>
         <div className="flex flex-col align-left w-[80%] m-auto mb-7">
-          <p className="text-left font-semibold">Email</p>
+          <p className="text-left font-semibold font-publicSans">Email</p>
           <input
             type="email"
             className="border-2 border-black rounded-md h-14"
@@ -90,7 +90,7 @@ const Topic6 = () => {
           />
         </div>
         <div className="flex flex-col align-left w-[80%] m-auto mb-7">
-          <p className="text-left font-semibold">Question/Query</p>
+          <p className="text-left font-semibold font-publicSans">Question/Query</p>
           <input
             type="message"
             className="border-2 border-black rounded-md h-28"
@@ -99,7 +99,7 @@ const Topic6 = () => {
           />
         </div>
         <button
-          className="bg-black text-white text-center m-auto py-3 px-14 rounded-xl mt-7 font-extrabold text-[22px]"
+          className="bg-black text-white text-center m-auto py-3 px-14 rounded-xl mt-7 font-extrabold text-[22px] font-futura "
           type="submit"
         >
           Submit

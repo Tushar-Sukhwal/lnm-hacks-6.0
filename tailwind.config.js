@@ -13,6 +13,7 @@ module.exports = {
       publicSans: ["Public Sans", "sans-serif"],
       lexendMega: ["Lexend Mega", "sans-serif"],
       futura: ["futura", "sans-serif"],
+      meslo: ["Meslo", "monospace"],
     },
     container: {
       center: true,

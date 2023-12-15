@@ -4,6 +4,11 @@
   font-family: "futura";
   src: url("/futura/futur.ttf");
 }
+@font-face {
+  font-family: "Meslo";
+  src: url("/Meslo/MesloLGMNerdFont-Regular.ttf");
+}
+
 
 
 @tailwind base;
@@ -87,4 +92,9 @@
 -webkit-box-shadow: 20px 22px 7px 3px rgba(0,0,0,0.87);
 -moz-box-shadow: 20px 22px 7px 3px rgba(0,0,0,0.87);
 box-shadow: 20px 22px 7px 3px rgba(0,0,0,0.87);
+}
+
+main {
+  width: 100vw;
+  overflow-x: hidden;
 }
