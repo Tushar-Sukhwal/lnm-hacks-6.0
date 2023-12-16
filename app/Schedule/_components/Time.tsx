@@ -23,19 +23,19 @@ function Time() {
         </div>
         <img src="./X.svg" className='h-[45%] px-2' alt="" />
       </div>
-      <div className='h-[75%]'>
+      <div className='h-[75%] md:py-5'>
       
-        <CardTitle className='text-3xl'>
-          Schedule
+        <CardTitle className='text-3xl lg:text-6xl font-publicSans ml-4 mt-3 italic'>
+        Scheduleee
         </CardTitle>
   
-      <CardContent className='text-xs lg:text-xl py-4 '>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus, omnis ex natus assumenda optio, soluta asperiores commodi modi, officia harum fugiat beatae eveniet explicabo molestias vero? In, commodi fugit.
+      <CardContent className='text-xs lg:text-xl py-4 font-publicSans font-bold '>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       </CardContent>
       </div>
      
     </Card>
-    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[90%] relative top-[1rem] left-[6rem]   ' />
+    <Image alt='back' src={back} className=' lg:ml-[7rem] h-[20%] w-[80%] lg:h-[60%] lg:w-[90%] relative left-[5rem] top-[4rem] lg:top-[1rem] lg:left-[6rem]   ' />
 
     </div>
    
