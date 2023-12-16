@@ -19,24 +19,24 @@ const Schedule = () => {
       id="schedule"
       className="bg-waves lg:h-screen lg:w-screen  lg:bg-no-repeat bg-contain bg-[#DDD6F4] border-b-8 border-black  "
     >
-      <Card className="rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-10 flex flex-row left-24">
+      <Card className="rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-10 flex flex-row left-16">
         <div className="border-r-2 w-[60%] border-black bg-white text-black text-xl font-bold text-center py-2">
           Topic#2
         </div>
-        <div className="bg-[#AB93CC] text-black w-[40%] text-center py-1 text-xl font-bold">
+        <div className="bg-[#AB93CC] text-black w-[40%] text-center py-1 text-xl font-bold font-publicSans">
           Schedule
         </div>
       </Card>
-      <div className="flex flex-col  lg:flex-row justify-evenly items-center">
+      <div className="flex flex-col  lg:flex-row justify-evenly items-center px-4 lg:mr-5">
         <div className=" relative mb-9 lg:bottom-[12rem] ">
           <Time />
         </div>
-        <div className="items-center py-10 mb-4 relative left-10 ">
+        <div className="items-center py-3 mb-4 relative left-7 lg:left-10 ">
           <Cal />
           <Image
             alt="back"
             src={anim}
-            className="w-[40%] lg:w-[80%] ml-[9rem]  relative top-[2rem] lg:bottom-[8rem] "
+            className="w-[50%] lg:w-[72%] ml-[9rem] z-20 relative bottom-28"
           />
         </div>
       </div>
