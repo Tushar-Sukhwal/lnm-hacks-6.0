@@ -148,7 +148,8 @@
     font-size: 1.6em;
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) and (max-height:920px) {
   .parallaxSection {
    display: block; 
    
@@ -158,14 +159,18 @@
     top: 25%;
     left: 25%;
   }
-
+  .theBox {
+    top: 2.8rem;
+   
+  }
   .boxLeft,
   .boxRight {
    
     width: 24rem;
   }
+
   .boxRight{
-    top: 37%;
+    top: 36%;
     left: 25%;
     font-size: 1.9em;
 
@@ -173,81 +178,97 @@
 
   .linkContainer {
     position: absolute;
-    bottom: 6rem;
-    left: 27%;
+    bottom: 8rem;
+    left: 26%;
     width: 24rem;
   }
 }
-@media screen and (max-width: 635px) {
-  .parallaxSection {
-   display: block; 
-  }
 
-  .leftContainer {
-    top: 23%;
-    left: 18%;
-  }
+@media screen and (max-width: 655px) and (max-height:920px){
 
-  .boxLeft,
-  .boxRight {
-   
-    width: 24rem;
-  }
-  .boxRight{
-    top: 35%;
-    left: 18%;
-    font-size: 1.8em;
-
-  }
-
-  .linkContainer {
-    position: absolute;
-    bottom: 7em;
+  .leftContainer,.boxRight,.linkContainer {
     left: 20%;
-    width: 24rem;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 597px) and (max-height:920px) {
 
   .leftContainer {
-    top: 22%;
-    left: 13%;
+    top: 24%;
   }
 
   .boxLeft,
   .boxRight {
-   
+    height: 11rem;
+
     width: 22rem;
   }
+  .theBox {
+    top: 2rem;
+   
+  }
+  .boxLeft{
+    font-size: 2em;
+    padding: 4rem 0 0 0;
+  }
   .boxRight{
-    top: 33%;
-    left: 13%;
+    top: 34%;
+    line-height: 3.5rem;
   }
 
   .linkContainer {
     position: absolute;
-    bottom: 7rem;
-    left: 15%;
+    bottom: 9rem;
     width: 22rem;
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 525px) and (max-height:920px) {
 
   .leftContainer {
-    top: 22%;
     left: 15%;
   }
 
   .boxLeft,
   .boxRight {
-   
-    width: 18rem;
+    height: 11rem;
+
+    width: 22rem;
+  }
+ 
+  .boxLeft{
+    font-size: 2em;
+    padding: 4rem 0 0 0;
   }
   .boxRight{
-    top: 35%;
     left: 15%;
+    line-height: 3.5rem;
+  }
+
+  .linkContainer {
+    position: absolute;
+    bottom: 10rem;
+    left: 15%;
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height:920px){
+
+  .leftContainer {
+    left: 17%;
+  }
+  .theBox {
+    left: -2.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 20rem;
+  }
+  .boxRight{
+    left: 17%;
     font-size: 1.7em;
 
   }
@@ -255,7 +276,7 @@
   .linkContainer {
     position: absolute;
     left: 17%;
-    width: 18rem;
+    width: 20rem;
 
   }
   .linkContainer a{
@@ -263,15 +284,49 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 435px) and (max-height:920px){
 
   .leftContainer {
-    top: 22%;
-    left: 10.5%;
+    left: 15%;
   }
   
   .theBox {
-    top: 2.7rem;
+    top: 2.2rem;
+    left: -2rem;
+    width: 5.5rem;
+    height: 4rem;
+    font-size: 1.8em;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 18rem;
+
+  }
+  .boxRight{
+    left: 15%;
+    font-size: 1.65em;
+    line-height: 2.7rem;
+  }
+
+  .linkContainer {
+    left: 15%;
+    width: 18rem;
+
+  }
+ 
+}
+
+@media screen and (max-width: 380px) and (max-height:920px){
+
+  .leftContainer {
+    left: 15%;
+  }
+  
+  .theBox {
+    top: 2.2rem;
     left: -2rem;
     width: 5.5rem;
     height: 4rem;
@@ -286,15 +341,464 @@
 
   }
   .boxRight{
-    top: 35%;
-    left: 10.5%;
+    left: 15%;
     font-size: 1.65em;
-    line-height: 3rem;
+    line-height: 2.7rem;
   }
 
   .linkContainer {
-    left: 16%;
-    width: 15rem;
+    left: 15%;
+    width: 16rem;
+
+  }
+ 
+}
+
+@media screen and (max-width: 350px) and (max-height:920px){
+
+  .leftContainer {
+    left: 13%;
+  }
+  
+  .theBox {
+    top: 2.2rem;
+    left: -2rem;
+    width: 5.5rem;
+    height: 4rem;
+    font-size: 1.8em;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 16rem;
+
+  }
+  .boxRight{
+    left: 13%;
+    font-size: 1.65em;
+    line-height: 2.7rem;
+  }
+
+  .linkContainer {
+    left: 13%;
+    width: 16rem;
+
+  }
+ 
+}
+
+@media screen and (max-width: 768px) and (max-height:820px) {
+
+  .leftContainer {
+    top: 23%;
+    left: 25%;
+  }
+ 
+  .boxLeft,
+  .boxRight {
+   
+    width: 24rem;
+  }
+
+  .boxRight{
+    top: 34%;
+    left: 25%;
+    font-size: 1.9em;
+
+  }
+
+  .linkContainer {
+    position: absolute;
+    bottom: 5rem;
+    left: 26%;
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 655px) and (max-height:820px){
+
+  .leftContainer,.boxRight,.linkContainer {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 597px) and (max-height:820px) {
+
+  .leftContainer {
+    top: 23%;
+  }
+
+  .boxLeft,
+  .boxRight {
+    height: 11rem;
+
+    width: 22rem;
+  }
+  .theBox {
+    top: 2rem;
+   
+  }
+  .boxLeft{
+    font-size: 2em;
+    padding: 4rem 0 0 0;
+  }
+  .boxRight{
+    top: 32%;
+    line-height: 3.5rem;
+  }
+
+  .linkContainer {
+    position: absolute;
+    bottom: 8rem;
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 525px) and (max-height:820px) {
+
+  .leftContainer {
+    top: 21%;
+    left: 15%;
+  }
+
+  .boxLeft,
+  .boxRight {
+    height: 11rem;
+
+    width: 22rem;
+  }
+ 
+  .boxLeft{
+    font-size: 2em;
+    padding: 4rem 0 0 0;
+  }
+  .boxRight{
+    top: 31%;
+    left: 15%;
+    line-height: 3.5rem;
+  }
+
+  .linkContainer {
+    position: absolute;
+    left: 15%;
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height:820px){
+
+  .leftContainer {
+    left: 17%;
+  }
+  .theBox {
+    left: -2.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 20rem;
+  }
+  .boxRight{
+    left: 17%;
+    font-size: 1.7em;
+
+  }
+
+  .linkContainer {
+    position: absolute;
+    left: 17%;
+    width: 20rem;
+
+  }
+  .linkContainer a{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 435px) and (max-height:820px){
+
+  .leftContainer {
+    left: 15%;
+  }
+  
+  .theBox {
+    top: 2.2rem;
+    left: -2rem;
+    width: 5.5rem;
+    height: 4rem;
+    font-size: 1.8em;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 18rem;
+
+  }
+  .boxRight{
+    left: 15%;
+    font-size: 1.9em;
+    line-height: 2.6rem;
+  }
+
+  .linkContainer {
+    left: 15%;
+    width: 18rem;
+
+  }
+ 
+}
+
+@media screen and (max-width: 380px) and (max-height:820px){
+
+  .leftContainer {
+    left: 15%;
+  }
+  
+  .theBox {
+    top: 2.2rem;
+    left: -2rem;
+    width: 5.5rem;
+    height: 4rem;
+    font-size: 1.8em;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 16rem;
+
+  }
+  .boxRight{
+    left: 15%;
+    font-size: 1.65em;
+    line-height: 2.7rem;
+  }
+
+  .linkContainer {
+    left: 15%;
+    width: 16rem;
+
+  }
+ 
+}
+
+@media screen and (max-width: 350px) and (max-height:820px){
+
+  .leftContainer {
+    left: 13%;
+  }
+  
+  .theBox {
+    top: 2.2rem;
+    left: -2rem;
+    width: 5.5rem;
+    height: 4rem;
+    font-size: 1.8em;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 16rem;
+
+  }
+  .boxRight{
+    left: 13%;
+    font-size: 1.65em;
+    line-height: 2.7rem;
+  }
+
+  .linkContainer {
+    left: 13%;
+    width: 16rem;
+
+  }
+ 
+}
+@media screen and (max-width: 1250px) and (max-height:720px) {
+  .leftContainer {
+    top: -27%;
+  }
+
+  .boxRight {
+    top: 23%;
+  }
+}
+@media screen and (max-width: 950px) and (max-height:720px) {
+  .leftContainer {
+    top: -25%;
+  }
+
+  .boxRight {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 768px) and (max-height:720px) {
+
+
+  .leftContainer {
+    top: 24.5%;
+    left: 25%;
+
+  }
+  .theBox {
+    top: 1.7rem;
+   
+  }
+  .boxLeft,
+  .boxRight {
+   height: 10rem;
+    width: 24rem;
+  }
+.boxLeft
+{
+  padding: 2.5rem 0 0 0;
+
+}
+  .boxRight{
+    top: 33.5%;
+    left: 25%;
+    font-size: 1.9em;
+    line-height: 3rem;
+
+  }
+
+  .linkContainer {
+    position: absolute;
+    bottom: 6rem;
+    left: 27%;
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 635px) and (max-height:720px){
+
+  .leftContainer,.boxRight,.linkContainer {
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 580px) and (max-height:720px) {
+
+  .leftContainer {
+    top: 20.5%;
+    left: 17%;
+  }
+
+  .boxRight{
+    top: 29%;
+    left: 17%;
+    line-height: 3.2rem;
+  }
+
+  .linkContainer {
+    position: absolute;
+    bottom: 8rem;
+    left: 18%;
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height:720px) {
+
+  .leftContainer {
+    left: 17%;
+  }
+
+  .boxLeft,
+  .boxRight {
+    width: 20rem;
+  }
+ 
+
+  .boxRight{
+    left: 17%;
+    line-height: 3.1rem;
+  }
+
+  .linkContainer {
+    position: absolute;
+    bottom: 8rem;
+    left: 19%;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 460px) and (max-height:720px){
+
+  .leftContainer {
+    top: 21%;
+    left: 17%;
+  }
+  .theBox {
+    top: 1.9rem;
+    left: -2.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 18rem;
+  }
+  .boxRight{
+    top: 30%;
+    left: 17%;
+    font-size: 1.7em;
+
+  }
+
+  .linkContainer {
+    position: absolute;
+    left: 17%;
+    width: 18rem;
+    bottom: 7rem;
+
+  }
+  .linkContainer a{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 385px) and (max-height:720px){
+
+  .leftContainer {
+    top: 22%;
+    left: 15%;
+  }
+  
+  .theBox {
+    top: 1.9rem;
+    left: -2rem;
+    width: 5.5rem;
+    height: 4rem;
+    font-size: 1.8em;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .boxLeft,
+  .boxRight {
+   
+    width: 16rem;
+
+  }
+  .boxRight{
+    top: 31%;
+    left: 15%;
+    font-size: 1.65em;
+    line-height: 2.4rem;
+  }
+
+  .linkContainer {
+    left: 15%;
+    width: 16rem;
+    bottom: 6rem;
 
   }
  
