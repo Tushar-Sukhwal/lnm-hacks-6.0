@@ -30,7 +30,7 @@ function Time() {
         </CardTitle>
   
       <CardContent className='text-xs lg:text-xl py-4 font-publicSans font-bold '>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Check out our productivity-boosting schedule with ample time for brainstorming, coding, and showcasing projects. Get ready for a hackathon focused on making cool stuff and having a good time, including fun activities
       </CardContent>
       </div>
      

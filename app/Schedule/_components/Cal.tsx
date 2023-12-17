@@ -72,11 +72,14 @@ function Cal() {
       <button className={`py-4 px-6 text-sm   md:text-xl  font-publicSans   font-bold ${isDay3?'bg-[#C2A5FD]':'bg-white'}`}onClick={dayThreeHandler} >DAY-3</button>
     </div>
     <div>
-      {`${Calender.map((day)=>{
+      {/* {`${Calender.map((day)=>{
         if(isDay1){
           day
         }
-      })}`}
+      })}`} */}
+      <h1 className='font-lexendMega font-bold text-center relative top-9 text-xl'>
+      Coming Soon ....
+      </h1>
     </div>
    </Card>
    
