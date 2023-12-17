@@ -19,6 +19,9 @@ const config: Config = {
         "section-6": "url('/section-6-background.png')",
         "section-7": "url('/topic-7-bg.png')",
       },
+      cursor: {
+        'fancy': 'url(/Vector.cur), default',
+      }
     },
   },
   plugins: [],

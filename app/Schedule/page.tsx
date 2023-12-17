@@ -27,7 +27,7 @@ const Schedule = () => {
           Schedule
         </div>
       </Card>
-      <div className="flex flex-col  lg:flex-row justify-evenly items-center px-4 lg:mr-5">
+      <div className="flex flex-col  lg:flex-row justify-around items-center px-4 lg:mr-16 lg:space-x-11">
         <div className=" relative mb-9 lg:bottom-[12rem] ">
           <Time />
         </div>

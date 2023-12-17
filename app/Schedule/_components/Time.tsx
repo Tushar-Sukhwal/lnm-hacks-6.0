@@ -14,7 +14,7 @@ import back from '../../../public/Group 13.png'
 function Time() {
   return (
     <div  >
-       <Card className='w-[20rem] h-[12.5rem] lg:w-[40rem] lg:h-[25rem] relative top-[12rem] left-4 lg:left-10  border-4 border-black rounded-none rounded-lg z-10 '>
+       <Card className='w-[20rem] h-[12.5rem] lg:w-[40rem] lg:h-[25rem] relative top-[12rem] left-4 lg:left-10  border-4 border-black  rounded-lg z-10 '>
       <div className='bg-[#FF9AA2] h-[25%] flex flex-row border-b-2 border-black  lg:gap-x-[32rem] items-center justify-between'>
         <div className='flex flex-row items-center ml-3 gap-x-5  '>
           <img src="./Ellipse 3.svg" className='w-[10%] lg:w-[45%]' alt="" />

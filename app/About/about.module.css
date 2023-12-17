@@ -23,7 +23,7 @@
   height: 3.77738rem;
   border: 2px solid black;
   color: #000;
-  font-family: MesloLGM Nerd Font Mono;
+  font-family: url('./assests/Meslo/MesloLGLDZNerdFontMono-Regular.ttf');
   font-size: 2em;
   font-style: normal;
   font-weight: 700;
@@ -52,8 +52,8 @@
 
 .heading {
   color: #000;
-  font-family: Futura;
-  font-size: 3em;
+  font-family: url('./assests/futura/futur.ttf');
+  font-size: 4em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

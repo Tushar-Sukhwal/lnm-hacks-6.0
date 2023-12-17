@@ -24,7 +24,7 @@
   width: 8.92856rem;
   height: 5.54456rem;
   color: #000;
-  font-family: Futura;
+  font-family: url('./assets/futura/futur.ttf');
   font-size: 3.5em;
   font-weight: 700;
   line-height: normal;
@@ -44,7 +44,7 @@
   stroke-width: 6.559px;
   stroke: #000;
   filter: drop-shadow(21.64362335205078px 16.396682739257812px 0.7278012037277222px #000);
-  font-family: Futura;
+  font-family: url('./assets/futura/futur.ttf');
   font-size: 3.5em;
   font-weight: 700;
   line-height: normal;
@@ -60,10 +60,11 @@
   background: #FFF;
   box-shadow: 14px 14px 0px 0px #FFC5D3;
   text-align: center;
-  font-family: MesloLGM Nerd Font Mono;
+  font-family: url('./assets/Meslo/MesloLGLDZNerdFontMono-Regular.ttf');
   font-size: 2em;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 4.5rem;
+  padding-top:2rem;
 }
 
 .linkContainer {
@@ -75,6 +76,8 @@
   stroke: #000;
   transform: translate(50%,-20rem);
   filter: drop-shadow(10.814352035522461px 7.674700736999512px 0.4651334583759308px #000);
+  font-family: url('./assets/Meslo/MesloLGLDZNerdFontMono-Regular.ttf');
+
 }
 
 .linkContainer a {
@@ -90,6 +93,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 
 /* Responsive styles */

@@ -21,6 +21,7 @@ background: #FFF;
     gap: 3rem;
     border-left:0.2rem solid #000;
     padding-left: 3rem;
+    font-family: url('./assests/futura/futura\ medium\ bt.ttf');
   }
 
   .nav-links a {
@@ -29,6 +30,7 @@ background: #FFF;
     margin: 1rem 0rem;
     color: black;
     font-size: 1.4em;
+    font-family: url('./assests/futura/futur.ttf');
     
   }
   

@@ -94,6 +94,9 @@ module.exports = {
       },
       dropShadow : {
         '3xl' : '0 35px 35px rgb(221,213,244)'
+      },
+      cursor: {
+        'fancy': 'url(/Vector.cur), default',
       }
     },
   },
