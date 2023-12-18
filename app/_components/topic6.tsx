@@ -55,7 +55,7 @@ const Topic6 = () => {
 
   return (
     <section
-      id="faq"
+      id="faqs"
       className=" bg-section-6 w-screen md:h-[130vh]  md:flex-row flex-col  flex bg-cover repeat-0 bg-[#D1FFEE] "
     >
       <form
