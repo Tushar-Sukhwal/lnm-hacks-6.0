@@ -79,7 +79,7 @@ function Cal() {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => getTime(deadline), 1000);
+    const interval = setInterval(() => getTime(), 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -98,8 +98,11 @@ function Cal() {
           day
         }
       })}`} */}
-      <h1 className='font-lexendMega font-bold text-center relative top-9 text-xl'>
+      <h1 className='font-lexendMega font-bold text-center relative top-9 text-lg'>
       {days} Days : {hours} hrs : {minutes} minutes : {seconds} seconds
+      </h1>
+      <h1 className='font-lexendMega font-bold text-center relative top-9 text-xl' >
+        Coming Soon...
       </h1>
     </div>
    </Card>

@@ -1,11 +1,13 @@
 /* marquee.module.css */
 
 /* Container styling */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600;700&family=Inter:wght@500&family=Lexend+Mega&display=swap');
 .marqueeContainer {
     background-color: black;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Lexend Mega', sans-serif;
     padding: 0.1rem 10rem;
   }
   

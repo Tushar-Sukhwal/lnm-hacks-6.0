@@ -25,7 +25,7 @@ const Topic7 = () => {
             </span>
             <br />
             <button className="bg-black font-bold rounded-xl text-white p-3 px-7 -mr-[10px] mt-5 text-xl font-futura">
-              Get Directions
+              <a href="https://www.google.com/maps/place/The+LNM+Institute+of+Information+Technology/@26.936346,75.923523,16z/data=!4m6!3m5!1s0x396dba21e8a1d1c9:0x5ab565cce4d44c2b!8m2!3d26.9362886!4d75.9234891!16s%2Fm%2F04cql40?hl=en-US&entry=ttu">Get Directions</a>
             </button>
           </div>
           <div className="md:w-[50%] h-auto text-right md:p-0 p-4 md:m-0 m-auto mt-3 md:mt-0">

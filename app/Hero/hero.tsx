@@ -29,7 +29,7 @@ const ParallaxSectionContent: React.FC = () => {
         </div>
         </div>
         <div ref={refRight} className={styles.boxRight}>
-          The Next Biggest Thing Happening Around You is Back!!!
+        Guess what? The next game-changer in your neighborhood is back for an encore! Don't miss out on the excitement!
         </div>
         <div ref={refLink} className={styles.linkContainer}>
           <Link href="/">
