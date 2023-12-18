@@ -1,11 +1,20 @@
-/* styles/TwoColumnLayout.module.css */
+@font-face {
+  font-family: 'Futura';
+  src:url('../About/assests/futura/futur.ttf')
+  format('truetype');
+}
+
+@font-face {
+  font-family: 'Meslo';
+  src: url('./assests/Meslo/MesloLGLDZNerdFontMono-Regular.ttf') format('truetype');
+}
 
 .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 52.5625rem;
+  height: 55.5625rem;
   background: url(./assests/polka.png) #9bc6fb 50% / cover no-repeat;
   padding: 20px;
 }
@@ -23,7 +32,7 @@
   height: 3.77738rem;
   border: 2px solid black;
   color: #000;
-  font-family: url('./assests/Meslo/MesloLGLDZNerdFontMono-Regular.ttf');
+  font-family: 'Meslo', sans-serif;
   font-size: 2em;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +46,7 @@
   stroke: #000;
   border: 2px solid black;
   text-align: center;
-  padding: 0.5rem 0 0 0;
+  padding-bottom: 0.5rem;
 }
 .topicRight {
   width: 100%;
@@ -47,12 +56,12 @@
   stroke: #000;
   border: 2px solid black;
   text-align: center;
-  padding: 0.5rem 0 0 0;
+  padding-bottom: 0.5rem ;
 }
 
 .heading {
   color: #000;
-  font-family: url('./assests/futura/futur.ttf');
+  font-family: 'Futura', sans-serif;
   font-size: 4em;
   font-style: normal;
   font-weight: 700;
@@ -84,7 +93,7 @@
 
 .imageRectangle .image {
   position: absolute;
-  z-index: 100000;
+  z-index: 90;
   width: 84%;
   height: 75%;
   top: 3rem;
@@ -170,9 +179,13 @@
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+    height: 57rem;
+
     padding: 2rem 0 ;
     gap: 1.5rem;
   }
+
+ 
   .left,
   .right {
     width: 80%;
@@ -220,7 +233,17 @@
 }
 
 @media screen and (max-width: 680px) {
+  .container{
+    height: 55rem;
+    gap: 1rem;
+  }
+  .heading{
+    font-size: 2.5em;
+  }
  
+  .content{
+    font-size: 1.4em;
+  }
   .heading{
     font-size: 2.5em;
   }
@@ -235,17 +258,7 @@
   }
 }
 @media screen and (max-width: 550px) {
-  .container{
-    height: 53rem;
-    gap: 1rem;
-  }
-  .heading{
-    font-size: 2.5em;
-  }
  
-  .content{
-    font-size: 1.4em;
-  }
   .imageRectangle {
     width: 21.5rem;
     left: 2%;
@@ -285,13 +298,25 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .heading{
+    font-size: 2em;
+  }
+  .imageRectangle {
+    width: 18rem;
+    height: 22rem;
+    left: 0%;
+  }
+
+}
+
 @media screen and (max-width: 370px) {
   .container{
     height: 45rem;
     gap: 0rem;
   }
   .heading{
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .content{
     font-size: 1em;
@@ -299,7 +324,7 @@
   .imageRectangle {
     width: 16rem;
     height: 18rem;
-    left: -5%;
+    left: -1%;
   }
 
   .imageRectangle .image {
