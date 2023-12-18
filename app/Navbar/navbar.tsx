@@ -62,15 +62,12 @@ const Navbar: NextPage<NavbarProps> = () => {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-                <AlertDialogDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
+                <AlertDialogDescription className="text-center font-lexendMega font-black">
+                 OOPS!! NOT AVAILABLE
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction>Continue</AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
@@ -80,11 +77,10 @@ const Navbar: NextPage<NavbarProps> = () => {
             <AlertDialogTrigger>
               <p onClick={closeNav}> Our Sponsors</p>
             </AlertDialogTrigger>
-            <AlertDialogContent className=" rounded-none shadow-xl">
-              <AlertDialogHeader>OOPS!!! Not Available</AlertDialogHeader>
+            <AlertDialogContent className=" rounded-none shadow-xl bg-black">
+              <AlertDialogHeader className="text-center font-lexendMega font-black text-white">OOPS!! Not Available</AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction>Continue</AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>

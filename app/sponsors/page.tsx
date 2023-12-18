@@ -27,7 +27,7 @@ function Sponsors() {
             <div className = 'border-r-2 w-[40%] border-black bg-white text-black text-xl font-bold text-center py-1'>
               Topic#5
             </div>
-              <div className = 'bg-[#FFDFE7] text-black w-[60%] text-center py-1 text-xl font-bold'>
+              <div className = 'bg-[#D9BFFF] text-black w-[60%] text-center py-1 text-xl font-bold'>
                 Sponsors
             </div>
         </Card>
