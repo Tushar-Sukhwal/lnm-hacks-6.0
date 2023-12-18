@@ -29,7 +29,7 @@ function Time() {
         Scheduleee
         </CardTitle>
   
-      <CardContent className='text-xs lg:text-xl py-4 font-publicSans font-bold '>
+      <CardContent className='text-xs lg:text-xl  py-1 lg:py-4 font-publicSans font-bold '>
       Check out our productivity-boosting schedule with ample time for brainstorming, coding, and showcasing projects. Get ready for a hackathon focused on making cool stuff and having a good time, including fun activities
       </CardContent>
       </div>
