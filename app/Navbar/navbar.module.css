@@ -1,4 +1,9 @@
 /* Navbar.css */
+@font-face {
+  font-family: 'Futura';
+  src:url('../Hero/assets/futura/futura\ medium\ bt.ttf')
+  format('truetype');
+}
 
 .navbar {
   width: 100%;
@@ -18,9 +23,10 @@ background: #FFF;
     justify-content: space-around;
     height: 100%;
     text-align: center;
-    gap: 3rem;
+    gap: 2.5rem;
     border-left:0.2rem solid #000;
     padding-left: 3rem;
+    font-family: 'Futura', sans-serif;
   }
 
   .nav-links a {
@@ -29,6 +35,7 @@ background: #FFF;
     margin: 1rem 0rem;
     color: black;
     font-size: 1.4em;
+    font-family: 'Futura',sans-serif;
     
   }
   
@@ -40,7 +47,7 @@ background: #FFF;
   
   @media only screen and (max-width: 1200px) {
    .nav-links {  
-    gap: 2rem;
+    gap: 1.78rem;
     padding-left: 3rem;
   }
 
@@ -87,8 +94,8 @@ background: #FFF;
   }
   @media only screen and (max-width: 580px) {
     .navbar{
-      height: 5rem;
-      padding-bottom: 2rem;
+      height: 4rem;
+      padding-bottom: 1.2rem;
     }
     .logo{
       transform: translate(25%,20%);
@@ -97,18 +104,22 @@ background: #FFF;
     }
     
     .nav-links {
-      position: fixed;
+      position: absolute;
+      
       top: 0;
       left:0;
       z-index: 100;
       height: 100vh;
       width: 100%;
+      font-family: 'Futura',sans-serif;
       background-color: #54cfde;
       flex-direction: column;
       justify-content: center;
       transform: translateX(-100%);
       transition: transform 0.3s ease-in;
     }
+    
+    
   
     .show-nav {
       transform: translateX(0);
@@ -119,7 +130,16 @@ background: #FFF;
     .hide-nav {
       transform: translateX(-100%);
     }
-  
+    /* .overlay {
+      position:absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(235, 217, 217, 0.335);
+      z-index: 100;
+    }
+   */
     .nav-icon {
       display: block;
       font-size: 1.5rem;
@@ -128,25 +148,19 @@ background: #FFF;
       color: #333;
     }
   
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      background-color: rgba(235, 217, 217, 0.335);
-      z-index: 100;
-  
-    }
+    
   
     .nav-links a {
-     z-index: 100;
+     z-index: 110;
       color: rgb(255, 255, 255);
       font-size: 1.4em;
     }
   }
 
   @media only screen and (max-width: 480px) {
+    .navbar{
+      height: 4rem;
+    }
     .logo{
       transform: translate(20%,20%);
       width: 14rem;
@@ -159,13 +173,13 @@ background: #FFF;
     }
   }
   @media only screen and (max-width: 380px) {
+   
     .logo{
       transform: translate(20%,20%);
       width: 12rem;
 
     }
     .nav-icon {
-    
       transform: translate(120%,50%);
       color: #333;
     }
