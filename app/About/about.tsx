@@ -4,12 +4,12 @@ import React from 'react';
 import styles from './about.module.css';
 import Image from 'next/image';
 
-import image from '/image 23.png'
-import barcode from '/Group.svg'
-import code from '/code.svg'
-import purple from '/purple.svg'
-import blue from '/blue.svg'
-import green from '/green.svg'
+import image from './assests/image 23.png'
+import barcode from './assests/Group.svg'
+import code from './assests/code.svg'
+import purple from './assests/purple.svg'
+import blue from './assests/blue.svg'
+import green from './assests/green.svg'
 
 const About: React.FC = () => {
   return (
