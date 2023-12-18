@@ -32,7 +32,7 @@ const Topic7 = () => {
         </div>
       </div>
       {/* footer */}
-      <div className="bg-[#2F2138] md:px-20 px-16 pt-10 pb-6">
+      <div className="bg-[#2F2138] md:px-20 px-6 pt-10 pb-6">
         <div className="md:flex-row flex flex-col  justify-between md:items-center">
           <div className="">
             <img
@@ -66,10 +66,10 @@ const Topic7 = () => {
               <a href="">Schedule</a>
               <a href="">CTF</a>
             </div>
-            <div className="flex justify-space-around gap-3 font-futura font-bold">
+            <div className="flex justify-between justify-space-around gap-3 font-futura font-bold">
               <a href="">Tracks & Prizes</a>
             </div>
-            <div className="flex justify-space-around gap-3 font-futura font-bold ">
+            <div className="flex justify-between md:justify-space-around gap-3 font-futura font-bold ">
               <a href="">Our Sponsors</a>
               <a href="">FAQs</a>
               <a href="">Venue</a>
