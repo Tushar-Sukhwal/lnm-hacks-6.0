@@ -1,7 +1,7 @@
 // components/ParallaxSection.tsx
 "use client"
 import React, { useEffect } from 'react';
-import Link from 'next/link';
+import ScrollLink from '@/components/ScrollLink';
 import { FaArrowDown } from "react-icons/fa";
 import { useParallax, useParallaxController, ParallaxProvider } from 'react-scroll-parallax';
 import styles from './hero.module.css';
@@ -29,16 +29,19 @@ const ParallaxSectionContent: React.FC = () => {
         </div>
         </div>
         <div ref={refRight} className={styles.boxRight}>
-          The Next Biggest Thing Happening Around You is Back!!!
+        Hold onto your hats because the next spectacular event 
+        around the corner is making a comeback, and it's bigger 
+        and better than ever!
         </div>
         <div ref={refLink} className={styles.linkContainer}>
-          <Link href="/">
+          <ScrollLink href="#about">
               <FaArrowDown />
-            
+            <h1 className='font-futura font-black'>
             LET THE HACKING BEGIN
+            </h1>
           
               <FaArrowDown />
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     
