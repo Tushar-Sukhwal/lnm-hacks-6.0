@@ -9,11 +9,11 @@ const Topic7 = () => {
         <div className="relative md:w-[93%]  border-black border-8  m-auto flex-col md:flex-row flex bg-white z-10  md:py-20 pb-10  mt-20 shadow-section-7 ">
           <div className="md:w-[43%] w-full   md:text-left font-semibold text-4xl md:pl-14 md:pr-32 md:py-10 p-8 pt-14 font-publicSans">
             {/* topic (absolute element ) */}
-            <div className="absolute left-0 md:top-[-110px] top-[-80px] font-normal flex text-xl">
-              <div className="border-2 border-black px-2 border-r-0 bg-white font-meslo font-bold">
+            <div className="absolute left-0 md:top-[-110px] top-[-80px] font-normal flex text-2xl">
+              <div className="border-2 border-black p-5 border-r-0 bg-white font-meslo font-bold">
                 Topic #7
               </div>
-              <div className="border-2 border-black px-2 bg-[#FFB587] font-meslo font-bold">
+              <div className="border-2 border-black p-5 bg-[#FFB587] font-meslo font-bold">
                 Venue
               </div>
             </div>

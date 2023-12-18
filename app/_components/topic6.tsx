@@ -62,11 +62,11 @@ const Topic6 = () => {
         className=" relative md:w-[40%] w-[80%] mt-28 border-4 border-black m-auto bg-white md:p-10 p-5 text-center shadow-[-17px_29px_0px_10px_#1a202c]"
         onSubmit={handleSubmit}
       >
-        <div className=" absolute -top-20 left-0 flex text-xl font-semibold ">
-          <p className="bg-white  border-2 border-black border-r-0 p-2 font-meslo font-bold ">
+        <div className=" absolute -top-24 left-0 flex text-2xl font-semibold justify-center items-center">
+          <p className="bg-white  border-2 border-black border-r-0 p-4  font-meslo  font-bold ">
             Topic#6
           </p>
-          <p className="bg-[#88FFD1]  border-2 border-black p-2 font-meslo font-bold ">FAQs</p>
+          <p className="bg-[#88FFD1]  border-2 border-black p-4 font-meslo font-bold text-center">FAQs</p>
         </div>
         <p className="text-[40px] text-center font-extrabold mb-10 font-futura">
           Ask Your Queries
