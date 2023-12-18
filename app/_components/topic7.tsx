@@ -1,3 +1,5 @@
+"use client";
+import ScrollLink from "@/components/ScrollLink";
 import Image from "next/image";
 
 const Topic7 = () => {
@@ -46,43 +48,52 @@ const Topic7 = () => {
               className="h-14 w-auto mb-4 m-auto "
             />
             <div className="flex  justify-between md:w-[200px]">
-              <button className="">
+              <a href="https://twitter.com/lnmhacks?lang=en">
                 <img src="/TwitterX.png" alt="" className="h-10 w-auto" />
-              </button>
-              <button className="">
+              </a>
+              <a
+                href="https://www.linkedin.com/company/lnm-hacks/?originalSubdomain=in"
+                className=""
+              >
                 <img src="/Linkedin.png" alt="" className="h-10 w-auto" />
-              </button>
-              <button className="">
+              </a>
+              <a className="">
                 <img src="/Mail.png" alt="" className="h-10 w-auto" />
-              </button>
-              <button className="">
+              </a>
+              <a href="https://www.facebook.com/lnmhacks/" className="">
                 <img src="/Facebook.png" alt="" className="h-10 w-auto" />
-              </button>
+              </a>
             </div>
           </div>
           <div className="text-white underline flex flex-col my-auto md:justify-start md:items-end justify-center mt-10 items-center mb-10 text-2xl md:text-base">
-            <div className="flex justify-space-around gap-3 font-futura font-bold ">
-              <a href="">About</a>
-              <a href="">Schedule</a>
-              <a href="">CTF</a>
+            <div className="flex  gap-4 font-futura font-bold ">
+              <div>
+                <ScrollLink href="#about">About</ScrollLink>
+              </div>
+              <div>
+                <ScrollLink href="#schedule">Schedule</ScrollLink>
+              </div>
+              <div>
+                <ScrollLink href="#ctf">CTF</ScrollLink>
+              </div>
             </div>
-            <div className="flex justify-between justify-space-around gap-3 font-futura font-bold">
-              <a href="">Tracks & Prizes</a>
+            <div className="flex  gap-4 font-futura font-bold">
+              <ScrollLink href="">Tracks & Prizes</ScrollLink>
             </div>
-            <div className="flex justify-between md:justify-space-around gap-3 font-futura font-bold ">
-              <a href="">Our Sponsors</a>
-              <a href="">FAQs</a>
-              <a href="">Venue</a>
+            <div className="flex   gap-4 font-futura font-bold ">
+              <ScrollLink href="">Our Sponsors</ScrollLink>
+              <ScrollLink href="#faqs">FAQs</ScrollLink>
+              <ScrollLink href="#venue">Venue</ScrollLink>
             </div>
           </div>
-        </div>
-        <div className="mt-3 text-white font-semibold w-full text-center font-futura">
-          Designed with ❤️ in 🇮🇳 by Suryansh Chauhan , Aditya Karanwal & Akshat
-          Singh
         </div>
         <div className="mt-3 text-white font-semibold w-full text-center font-futura">
           Made with ❤️ in 🇮🇳 by Tushar Sukhwal, Rudransh Singhal and Ayush
           Bansal
+        </div>
+        <div className="mt-3 text-white font-semibold w-full text-center font-futura">
+          Designed with ❤️ in 🇮🇳 by Suryansh Chauhan , Aditya Karanwal & Akshat
+          Singh
         </div>
       </div>
     </section>

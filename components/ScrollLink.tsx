@@ -11,13 +11,27 @@ type ScrollLinkProps = AnchorProps & LinkProps & PropsWithChildren;
 const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-    //remove everything before the hash
+
+    // Remove everything before the hash
     const targetId = e.currentTarget.href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
-    window.scrollTo({
-      top: elem?.getBoundingClientRect().top,
-      behavior: "smooth",
-    });
+
+    if (elem) {
+      const targetOffset = elem.getBoundingClientRect().top;
+
+      // Determine the direction of the scroll
+      const scrollDirection = targetOffset < 0 ? -1 : 1;
+
+      // Calculate the target scroll position
+      const targetScrollPosition =
+        window.scrollY + targetOffset - scrollDirection;
+
+      // Scroll smoothly to the target position
+      window.scrollTo({
+        top: targetScrollPosition,
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <Link {...props} onClick={handleScroll}>
