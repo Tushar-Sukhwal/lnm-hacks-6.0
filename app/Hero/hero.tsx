@@ -1,10 +1,14 @@
 // components/ParallaxSection.tsx
-"use client"
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+"use client";
+import React, { useEffect } from "react";
+import Link from "next/link";
 import { FaArrowDown } from "react-icons/fa";
-import { useParallax, useParallaxController, ParallaxProvider } from 'react-scroll-parallax';
-import styles from './hero.module.css';
+import {
+  useParallax,
+  useParallaxController,
+  ParallaxProvider,
+} from "react-scroll-parallax";
+import styles from "./hero.module.css";
 
 const ParallaxSectionContent: React.FC = () => {
   const { ref: refLeft } = useParallax<HTMLDivElement>({ speed: 100 });
@@ -18,31 +22,29 @@ const ParallaxSectionContent: React.FC = () => {
     parallaxController?.update();
   }, [parallaxController]);
   return (
-      <div className={styles.parallaxSection}>
-        {/* THE Box */}
-        <div className={styles.leftContainer}>
+    <div className={styles.parallaxSection}>
+      {/* THE Box */}
+      <div className={styles.leftContainer}>
         <div ref={refTheBox} className={styles.theBox}>
           The
         </div>
         <div ref={refLeft} className={styles.boxLeft}>
           LNMHACKS
         </div>
-        </div>
-        <div ref={refRight} className={styles.boxRight}>
-        &lsquo;Guess what&rsquo;&#63; The next game-changer in your neighborhood is back for an encore! Don&rsquo;t miss out on the excitement&rsquo;
-        </div>
-        <div ref={refLink} className={styles.linkContainer}>
-          <Link href="/">
-              <FaArrowDown />
-            <h1 className='font-futura font-black'>
-            LET THE HACKING BEGIN
-            </h1>
-          
-              <FaArrowDown />
-          </Link>
-        </div>
       </div>
-    
+      <div ref={refRight} className={styles.boxRight}>
+        &rdquo;The next game changer is back for an encore&iexcl; Don&rsquo;t
+        miss out&#x21; &rdquo;
+      </div>
+      <div ref={refLink} className={styles.linkContainer}>
+        <Link href="/">
+          <FaArrowDown />
+          <h1 className="font-futura font-black">LET THE HACKING BEGIN</h1>
+
+          <FaArrowDown />
+        </Link>
+      </div>
+    </div>
   );
 };
 
@@ -55,3 +57,14 @@ const ParallaxSection: React.FC = () => {
 };
 
 export default ParallaxSection;
+
+// &lsquo; - '
+// &rsquo; - '
+// &ldquo; - "
+// &rdquo; - "
+// &ndash; - -
+// &mdash; - -
+// &hellip; - ...
+// &iexcl; - !
+// &iquest; - ?
+// &bull; - bullet
