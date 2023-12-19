@@ -33,8 +33,8 @@ const ParallaxSectionContent: React.FC = () => {
         </div>
       </div>
       <div ref={refRight} className={styles.boxRight}>
-        &rdquo;The next game changer is back for an encore&iexcl; Don&rsquo;t
-        miss out&#x21; &rdquo;
+        The next game changer is back for an encore&#x21; Don&rsquo;t
+        miss out&#x21; 
       </div>
       <div ref={refLink} className={styles.linkContainer}>
         <Link href="/">
