@@ -39,7 +39,7 @@ const ParallaxSectionContent: React.FC = () => {
       <div ref={refLink} className={styles.linkContainer}>
         <Link href="https://dorahacks.io/hackathon/lnmhacks">
           <FaArrowDown />
-          <h1 className="font-futura font-black">REGISTER FOR THE HACKS</h1>
+          <h1 className="font-futura font-black">CLICK HERE TO REGISTER</h1>
 
           <FaArrowDown />
         </Link>
