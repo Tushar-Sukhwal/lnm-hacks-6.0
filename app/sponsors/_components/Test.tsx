@@ -15,11 +15,11 @@ import solana from "../../../public/image 24.png"
 function Test() {
   return (
     <div>
-      <Image alt = 'blue' src = {blue} className='h-[9.5rem] relative left-[13.7rem] top-[9.5rem]'/>
+      <Image alt = 'blue' src = {blue} className='h-[9.5rem] relative left-[13.7rem] top-[9.5rem] hidden'/>
       <Card className ='rounded-none h-[8rem] w-[15rem] border-2 border-black'>
       <Image alt ='solana' src={solana} className = "relative px-5 top-12" />
       </Card>
-      <Image alt='yellow' src={yellow} className='w-[16.5rem]'/>
+      <Image alt='yellow' src={yellow} className='w-[16.5rem] hidden'/>
     </div>
   )
 }

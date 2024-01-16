@@ -31,13 +31,8 @@ const ParallaxSectionContent: React.FC = () => {
         <div ref={refLeft} className={styles.boxLeft}>
           LNMHACKS
         </div>
-<<<<<<< HEAD
-        </div>
-        <div ref={refRight} className={styles.boxRight}>
-        Hold onto your hats because the next spectacular event 
-        around the corner is making a comeback, and it's bigger 
-        and better than ever!
-        </div>
+        
+       
         <div ref={refLink} className={styles.linkContainer}>
         <Link href="https://dorahacks.io/hackathon/lnmhacks">
           <FaArrowDown />
@@ -45,13 +40,12 @@ const ParallaxSectionContent: React.FC = () => {
             <FaArrowDown />
           </Link>
         </div>
-=======
->>>>>>> 7b4db6a9a6e0fb274e32950d4ca7643ebb3e31b4
       </div>
       <div ref={refRight} className={styles.boxRight}>
-        The next game changer is back for an encore&#x21; Don&rsquo;t
-        miss out&#x21; 
-      </div>
+        Hold onto your hats because the next spectacular event 
+        around the corner is making a comeback, and it's bigger 
+        and better than ever!
+        </div>
       <div ref={refLink} className={styles.linkContainer}>
         <Link href="https://dorahacks.io/hackathon/lnmhacks">
           <FaArrowDown />

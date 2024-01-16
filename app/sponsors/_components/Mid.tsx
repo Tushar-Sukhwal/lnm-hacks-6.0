@@ -22,12 +22,12 @@ function Mid() {
           <Image
             alt="blue"
             src={blue}
-            className="h-[14rem] relative left-[19.1rem] top-[13.8rem]"
+            className="h-[14rem] relative left-[19.1rem] top-[13.8rem] hidden lg:visible"
           />
           <Card className="rounded-none h-[12rem] w-[20rem] border-2 border-black">
           <Image alt ='solana' src={solana} className="relative px-5 top-16 left-5" />
           </Card>
-          <Image alt="yellow" src={yellow} className="w-[22.2rem]" />
+          <Image alt="yellow" src={yellow} className="w-[22.2rem] hidden lg:visible" />
         </div>
       </div>
     </div>

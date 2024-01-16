@@ -14,8 +14,12 @@ import Check from './_components/Check'
 import Image from 'next/image'
 import cone from '../../public/Vector 31 (1).png'
 import banner from "../../public/banner.png"
-
-
+import solana from "../../public/image 24.png"
+import { StaticImageData } from "next/image"
+import aops from "../../public/AoPS_Main_Logo (1).png"
+import zeta from "../../public/green@4x.png"
+import jb from "../../public/jb_beam.png"
+import echo from "../../public/echo3D - Logo 2021 - Black.png"
 function Sponsors() {
   return (
     <div>
@@ -23,7 +27,7 @@ function Sponsors() {
          
         <Image alt='cone' src={cone} className='relative lg:top-0 '/>
 
-        <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-[7rem] flex flex-row left-24'>
+        <Card className='rounded-none h-[3rem] w-[17rem] border-4  border-black z-20 relative top-[7rem] flex flex-row left-24 invisible md:visible'>
             <div className = 'border-r-2 w-[40%] border-black bg-white text-black text-xl font-bold text-center py-1'>
               Topic#5
             </div>
@@ -32,19 +36,20 @@ function Sponsors() {
             </div>
         </Card>
 
-        <Card className='w-[18rem] h-[4rem] text-center border-2 border-black rounded-none relative top-14 left-[44rem]'>
-          <CardTitle className='mt-3 font-black text-3xl'>SPONSORS</CardTitle>
+        <Card className='lg:w-[18rem] lg:h-[4rem] w-[12rem] h-[3rem] text-center border-2 border-black rounded-none relative lg:top-14 lg:left-[44rem] left-[6rem] top-10 '>
+          <CardTitle className='mt-2 font-black text-2xl   lg:text-3xl '>SPONSORS</CardTitle>
         </Card>
 
-        <div className=''>
-            <div className='grid grid-cols-2 gap-y-2  px-10 py-8 relative left-44'>
-                <Big/>
-                <Big/>
-                <Big/>
-                <Big/>
+         <div className=''>
+            <div className='md:grid md:grid-cols-2 gap-y-2 py-24 px-20  lg:px-10 lg:py-5 lg:mb-4 relative lg:left-44 space-y-3 lg:space-x-5  '>
+                <Big sponsor = {aops} classname="mt-2 p-2 md:mt-10 "/>
+                <Big sponsor = {zeta} classname="w-[86%] ml-2 md:mt-10 lg:ml-5 " />
+                <Big sponsor = {jb} classname="w-[50%] ml-9 lg:w-[70%]"/>
+                
+                <Big sponsor = {echo} classname="mt-2 p-4 md:w-[70%] lg:w-[80%] xl:w-[90%] lg:mt-[6rem] "/>
             </div>
         </div>
-        <div className='grid grid-cols-3 place-content-center px-10 relative left-32'>
+        {/* <div className='grid grid-cols-3 place-content-center px-10 relative left-32'>
             <Mid/>
             <Mid/>
             <Mid/>
@@ -66,7 +71,7 @@ function Sponsors() {
             <Test/>
             <Test/>
 
-        </div>
+        </div> */}
     </div>
     <Image alt="social" src={banner} className='w-full'/>
     
