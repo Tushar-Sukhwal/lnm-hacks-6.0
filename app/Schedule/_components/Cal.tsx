@@ -92,22 +92,42 @@ function Cal() {
       <button className={`py-4 px-8 text-sm  md:text-xl  font-publicSans  font-bold ${isDay2?'bg-[#C2A5FD]':'bg-white'}`}onClick={dayTwoHandler} >DAY-2</button>
       <button className={`py-4 px-6 text-sm   md:text-xl  font-publicSans   font-bold ${isDay3?'bg-[#C2A5FD]':'bg-white'}`}onClick={dayThreeHandler} >DAY-3</button>
     </div>
-    <div>
-      {/* {`${Calender.map((day)=>{
-        if(isDay1){
-          day
-        }
-      })}`} */}
-      <h1 className='font-lexendMega font-bold text-center relative top-9 text-lg'>
-      {days} Days : {hours} hrs : {minutes} minutes : {seconds} seconds
-      </h1>
-      <h1 className='font-lexendMega font-bold text-center relative top-9 text-xl' >
-        Coming Soon...
-      </h1>
+    <div className='text-2xl font-publicSans text-center p-5'>
+  {
+    currentDay === 0 ? 
+    <div className='space-y-4'>
+      <p>Registrations starts: 12PM</p>
+      <p>Opening Ceremony: 2PM</p>
+      <p>Polygon vs Solana Call: 4PM</p>
+      <p>Reef Workshop: 6PM</p>
+      <p>Dinner: 8PM</p>
+    </div> 
+    : currentDay === 1 ?
+    <div className='space-y-4'>
+      <p>Breakfast: 8AM</p>
+      <p>PlutoPe Talk: 12PM</p>
+      <p>Lunch: 1PM</p>
+      <p>Router Talk: 2PM</p>
+      <p>Superteam Fun Event: 4PM</p>
+      <p>Reef Talk: 7PM</p>
     </div>
+    : currentDay === 2 ?
+    <div className='space-y-4'>
+      <p>Breakfast: 8AM</p>
+    </div>
+    : <h2>Other Day</h2>
+  }
+</div>
    </Card>
    
   )
 }
+
+// <h1 className='font-lexendMega font-bold text-center relative top-9 text-lg'>
+// {days} Days : {hours} hrs : {minutes} minutes : {seconds} seconds
+// </h1>
+// <h1 className='font-lexendMega font-bold text-center relative top-9 text-xl' >
+//   Coming Soon...
+// </h1>
 
 export default Cal
